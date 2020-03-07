@@ -100,14 +100,19 @@ def sentiment_analysis(text):
 
 
 def choice_character_trait(character_traits_list):
-    array_size = len(character_traits_list) == 1
+    array_size = len(character_traits_list)
+    perc_pos = 0.0178
 
     if array_size == 1:
-        return character_traits_list[0]
+        print(list(character_traits_list.keys())[0]);
     elif array_size > 1:
-        return "nothing"
-
-    return "friendly"
+        if 'aggressive' in character_traits_list and (0 <= perc_pos <= 0.017) or (0.019 <= perc_pos <= 0.060):
+            print('aggressive')
+            return 'aggressive'
+        else:
+            closest_key, closest_value = min(character_traits_list.items(), key=lambda x: abs(perc_pos - x[1]))
+            print(closest_key)
+            return closest_key
 
 
 class ActionGetCarDataPerson(Action):
