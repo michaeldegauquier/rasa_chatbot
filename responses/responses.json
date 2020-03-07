@@ -1,0 +1,93 @@
+{
+  "greet": {
+    "friendly": ["Hello, how can I help you?", "Good day, how can I help?"],
+    "happy": ["Hi there! How can I help you?", "Hello there! How can I help?"]
+  },
+  "goodbye": {
+    "friendly": ["Goodbye", "Have a nice day."],
+    "happy": ["Goodbye!", "Have a good day further!"]
+  },
+  "person_name": {
+    "friendly": ["How can I help you?"],
+    "happy": ["How can I help you?"]
+  },
+  "want_insurance": {
+    "friendly": ["Which insurance do you want?"],
+    "happy": ["Which insurance do you wish?"]
+  },
+  "car_insurance": {
+    "friendly": ["That's no problem! We can handle this for you."],
+    "happy": ["That's no problem! We can handle it!"]
+  },
+  "ask_after_insurances": {
+    "friendly": ["We offer car insurances to our customers."],
+    "happy": ["We can offer you a car insurance!"]
+  },
+  "price_car_insurance": {
+    "friendly": ["It is between the 500 and 1200 euros."],
+    "happy": ["It is just between the 500 and 1200 euros :)"]
+  },
+  "thank": {
+    "friendly": ["No problem."],
+    "happy": ["No problem!"]
+  },
+  "deny": {
+    "friendly": ["Okay no problem."],
+    "happy": ["Okay :)"]
+  },
+  "affirm": {
+    "friendly": ["As you wish."],
+    "happy": ["Ok :)"]
+  },
+  "dont_know": {
+    "friendly": ["No problem."],
+    "happy": ["No problem :)"]
+  },
+  "no_questions": {
+    "friendly": ["Sounds then clear for you. Something else?"],
+    "happy": ["Nice! Something else?"]
+  },
+
+
+
+  "ask_person_name": {
+    "friendly": ["What is your name, please?"],
+    "happy": ["Tell me your name."]
+  },
+  "ask_car_insurance_new_car": {
+    "friendly": ["Is your car new?"],
+    "happy": ["Is it a new car?"]
+  },
+  "ask_car_insurance_car_type": {
+    "friendly": ["Which type of car do you have?"],
+    "happy": ["What type is your nice car?"]
+  },
+  "ask_car_insurance_year_car": {
+    "friendly": ["Of which year is your car?"],
+    "happy": ["Of which year is your nice car?"]
+  },
+  "ask_car_insurance_type_fuel": {
+    "friendly": ["What type of fuel do your car need?"],
+    "happy": ["What type of fuel needs your car?"]
+  },
+  "got_data_car_insurance": {
+    "friendly": ["That were all the questions. I have all the information now to help you further!"],
+    "happy": ["Well that's it! I will take care of your insurance :)"]
+  },
+  "another_questions": {
+    "friendly": ["Are there still questions about something?"],
+    "happy": ["Are there any questions?"]
+  },
+  "wrong_answer": {
+    "friendly": ["I am sorry but it was not an answer on my question.", "Can you please answer my questions.", "Please answer my questions."],
+    "happy": ["Can you just answer the question :)", "Just answer the questions :)"]
+  },
+  "another_car_insurance": {
+    "friendly": ["No problem. I will help you."],
+    "happy": ["No problem! I will help you with it!"]
+  },
+  "no_information": {
+    "friendly": ["I need that information to help you further."],
+    "happy": ["No problem! But I need that information to help you further."]
+  }
+}

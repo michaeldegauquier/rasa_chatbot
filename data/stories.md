@@ -1,0 +1,661 @@
+## Greet
+
+* greet
+    - action_get_intent
+
+## Goodbye
+
+* goodbye
+    - action_get_intent
+
+## Want_insurance
+
+* want_insurance
+    - action_get_intent
+
+## Car_insurance
+
+* car_insurance
+    - action_get_intent
+
+## Car_insurance_2
+
+* greet
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+
+## Want_insurance
+
+* greet
+    - action_get_intent
+* want_insurance
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+
+## Get_car_insurance_1
+
+* greet
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+	- action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"BMW"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2020"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"Benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+
+## Get_car_insurance_2
+
+* greet
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"BMW"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2020"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"Benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+
+## Get_car_insurance_3
+
+* greet
+    - action_get_intent
+* want_insurance
+    - action_get_intent
+* ask_after_insurances
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* affirm{"new_car":"yes"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Audi"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2019"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"Benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* deny{"new_car":"no"}
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_4
+
+* greet
+    - action_get_intent
+* want_insurance
+    - action_get_intent
+* ask_after_insurances
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* affirm{"new_car":"yes"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Audi"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2019"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"Benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* deny{"new_car":"no"}
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_5
+
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* affirm{"new_car":"yes"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Audi"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2019"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"Benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+
+## Get_car_insurance_6
+
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* affirm{"new_car":"yes"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Audi"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2019"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"Benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+
+## Get_car_insurance_7
+
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* affirm{"new_car":"yes"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Audi"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2019"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"Benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+
+## Get_car_insurance_8
+
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* affirm{"new_car":"yes"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Audi"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2019"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"Benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+
+## Get_car_insurance_9
+
+* greet
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Audi"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2015"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"diesel"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* price_car_insurance
+    - action_get_intent
+* thank
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_10
+
+* greet
+    - action_get_intent
+* person_name{"person_name":"Michael"}
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* car_insurance_new_car
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"BMW"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2015"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"diesel"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_11
+
+* greet
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Audi"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2012"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"old"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"BMW"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2015"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_12
+
+* greet
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"bmw"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2018"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+    - action_no_information
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_13
+
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+	- action_get_intent
+    - action_no_information
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+	- action_get_intent
+    - action_no_information
+* car_insurance_car_type{"car_type":"bmw"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+	- action_get_intent
+    - action_no_information
+* car_insurance_year_car{"year_car":"2018"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+	- action_get_intent
+    - action_no_information
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_14
+
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+	- action_get_intent
+    - action_no_information
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"bmw"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2018"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_15
+
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+	- action_get_intent
+    - action_no_information
+* car_insurance_car_type{"car_type":"bmw"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2018"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_16
+
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"bmw"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+	- action_get_intent
+    - action_no_information
+* car_insurance_year_car{"year_car":"2018"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_17
+
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"bmw"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2018"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+	- action_get_intent
+    - action_no_information
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_18
+
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"bmw"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2018"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+	- action_get_intent
+    - action_no_information
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_19
+
+* greet
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"BMW"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2018"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* price_car_insurance
+    - action_get_intent
+* affirm
+    - action_get_intent
+    - action_another_question
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_20
+
+* greet
+    - action_get_intent
+* car_insurance{"person_name":"Michael"}
+    - action_get_car_data_person
+* dont_know
+    - action_get_intent
+    - action_no_information
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Audi A5"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2016"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+	- action_get_intent
+    - action_no_information
+* car_insurance_type_fuel{"type_fuel":"diesel"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_21
+
+* greet
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"BMW"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2020"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"diesel"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* no_questions
+    - action_get_intent
+* deny{"new_car":"no"}
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_22
+
+* greet
+    - action_get_intent
+* car_insurance{"person_name":"Michael"}
+    - action_get_intent
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"old"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Volkswagen"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2011"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"diesel","new_car":"yes"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* price_car_insurance
+    - action_get_intent
+* goodbye
+    - action_get_intent

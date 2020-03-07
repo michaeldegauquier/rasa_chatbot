@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rasa Chatbot</title>
+</head>
+<body>
+
+<div id="webchat"/>
+<script src="https://storage.googleapis.com/mrbot-cdn/webchat-0.5.8.js"></script>
+<script>
+  WebChat.default.init({
+    selector: "#webchat",
+    customData: {"language": "en"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+    socketUrl: "http://localhost:5005",
+    socketPath: "/socket.io/",
+    profileAvatar: "avatar.png",
+    title: "Bot",
+    subtitle: null,
+    inputTextFieldHint: "Type a message...",
+    fullScreenMode: false,
+    displayUnreadCount: true,
+    params: {
+        images: {
+          dims: {
+            width: 300,
+            height: 200
+          }
+        },
+        storage: "local"
+      }
+  })
+</script>
+
+</body>
+</html>

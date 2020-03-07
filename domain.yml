@@ -1,0 +1,29 @@
+intents:
+- greet
+- goodbye
+- want_insurance
+- car_insurance
+- ask_after_insurances
+- thank
+- deny
+- affirm
+- dont_know
+- person_name
+- car_insurance_new_car
+- car_insurance_car_type
+- car_insurance_year_car
+- car_insurance_type_fuel
+- price_car_insurance
+- no_questions
+entities:
+- person_name
+- year_car
+- car_type
+- type_fuel
+- new_car
+actions:
+- action_get_intent
+- action_get_car_data_person
+- action_another_question
+- action_wrong_answer
+- action_no_information

@@ -1,0 +1,12 @@
+{
+    "person": {
+        "person_name": ""
+    },
+    "car_insurance": {
+        "new_car": "",
+        "car_type": "",
+        "year_car": "",
+        "type_fuel": "",
+        "closed": ""
+    }
+}
