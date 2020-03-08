@@ -9,6 +9,8 @@
 - hi there
 - hey there!
 - hi there bro
+- hi there!
+- hello there!
 
 ## intent:goodbye
 - bye
@@ -23,6 +25,7 @@
 - i have work to do
 - ok goodbye
 - Have a nice day
+- Goodbye!
 
 ## intent:want_insurance
 - I want an insurance
@@ -48,6 +51,8 @@
 - i want an insurance for my car
 - I want a car insurance
 - My name is [Michael](person_name) and I want a car insurance
+- I want a car insurance please
+- I want a car insurance please!
 
 ## intent:ask_after_insurances
 - Which one do you have?
@@ -62,6 +67,7 @@
 - Thx
 - ty
 - ok thank you
+- no thank you very much
 
 ## intent:deny
 - Nope
@@ -141,6 +147,7 @@
 - i have a [Volkswagen](car_type)
 - It is a [Volkswagen](car_type)
 - i drive with a [BMW](car_type)
+- it is a [Volkswagen](car_type)
 
 ## intent:car_insurance_year_car
 - It is from [2020](year_car)
@@ -174,6 +181,7 @@
 - from [2018](year_car)
 - it was from [2016](year_car)
 - from [2011](year_car)
+- from [2014](year_car)
 
 ## intent:car_insurance_type_fuel
 - The fuel is [benzine](type_fuel)
@@ -191,8 +199,11 @@
 - I think [benzine](type_fuel)
 - i think it is [diesel](type_fuel)
 - I thought it was [diesel](type_fuel)
+- it needs [benzine](type_fuel)
+- it is an [electric](type_fuel) car
 
 ## intent:no_questions
 - no i dont have any questions anymore
 - no i dont
 - no i have no questions
+- no i have no questions anymore thank you!

@@ -659,3 +659,32 @@
     - action_get_intent
 * goodbye
     - action_get_intent
+
+## Get_car_insurance_23
+
+* greet
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Volkswagen"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year_car":"2014"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* no_questions
+    - action_get_intent
+* thank
+    - action_get_intent
+* goodbye
+    - action_get_intent
