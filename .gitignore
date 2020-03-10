@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 #extra
-secret_env.txt
+./secret_env.txt
