@@ -87,8 +87,10 @@ def sentiment_analysis(text):
         ]
     }
 
+    api_key = open('secret_env.txt').readlines()[0].split(':')[1].strip()
+
     headers = {'Content-Type': 'application/json',
-               'Ocp-Apim-Subscription-Key': 'dc75b701d8574555849d6235161a32d7'}
+               'Ocp-Apim-Subscription-Key': api_key}
 
     r = requests.post(url, data=json.dumps(body), headers=headers)
     data = r.json()
