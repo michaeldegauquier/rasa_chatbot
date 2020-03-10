@@ -1,93 +1,137 @@
 {
   "greet": {
     "friendly": ["Hello, how can I help you?", "Good day, how can I help?"],
-    "happy": ["Hi there! How can I help you?", "Hello there! How can I help?"]
+    "happy": ["Hi there! How can I help you?", "Hello there! How can I help?"],
+    "aggressive": ["Hello stupid, what's the problem?", "Damn! What the fuck is the problem?!"],
+    "rude": ["Omg you need help for what?", "Why do I have to help you?"]
   },
   "goodbye": {
     "friendly": ["Goodbye", "Have a nice day."],
-    "happy": ["Goodbye!", "Have a good day further!"]
+    "happy": ["Goodbye!", "Have a good day further!"],
+    "aggressive": ["Let me alone stupid!", "Just don't talk to me!"],
+    "rude": ["Finally done", "Yeah bye"]
   },
   "person_name": {
-    "friendly": ["How can I help you?"],
-    "happy": ["How can I help you?"]
+    "friendly": ["How can I help you?", "How can I help?"],
+    "happy": ["How can I help you my customer?", "How can I help you? :)"],
+    "aggressive": ["What the fuck is the problem?", "For what do you need help stupid?"],
+    "rude": ["Need help?", "Ok, problems?"]
   },
   "want_insurance": {
-    "friendly": ["Which insurance do you want?"],
-    "happy": ["Which insurance do you wish?"]
+    "friendly": ["Which insurance do you want?", "Which insurance do you want to have?"],
+    "happy": ["Which insurance do you wish?", "Which insurance do you want? :)"],
+    "aggressive": ["What insurance stupid!!!?", "What kind of stupid insurance!??"],
+    "rude": ["Which insurance?", "What insurance?"]
   },
   "car_insurance": {
-    "friendly": ["That's no problem! We can handle this for you."],
-    "happy": ["That's no problem! We can handle it!"]
+    "friendly": ["That's no problem! We can handle this for you.", "No problem!"],
+    "happy": ["That's no problem! We can handle it!", "No problem! We can handle it! :)"],
+    "aggressive": ["Omg you are meaning this!! Just answer the stupid questions!", "OK THEN! Just answer the stupid questions!"],
+    "rude": ["Ok just answer some questions.", "Ok"]
   },
   "ask_after_insurances": {
-    "friendly": ["We offer car insurances to our customers."],
-    "happy": ["We can offer you a car insurance!"]
+    "friendly": ["We offer car insurances to our customers.", "We offer car insurances to you."],
+    "happy": ["We can offer you a car insurance!", "We can offer you a nice car insurance for tne right price!"],
+    "aggressive": ["Just a stupid car insurance!", "Stupid car insurances!"],
+    "rude": ["Car insurance.", "Just a car insurance."]
   },
   "price_car_insurance": {
-    "friendly": ["It is between the 500 and 1200 euros."],
-    "happy": ["It is just between the 500 and 1200 euros :)"]
+    "friendly": ["It is between the 500 and 2300 euros.", "It is a price between the 500 and 2300 euros."],
+    "happy": ["It is just between the 500 and 2300 euros :)", "A nice price between the 500 and 2300 euros!"],
+    "aggressive": ["I don't know!!", "I can't know everything!!"],
+    "rude": ["Between 500 and 2300 euros.", "Idk, between 500 and 2300 euros."]
   },
   "thank": {
-    "friendly": ["No problem."],
-    "happy": ["No problem!"]
+    "friendly": ["No problem.", "No problem, it is my job."],
+    "happy": ["No problem!", "No problem, it is my job! :)"],
+    "aggressive": ["Just shut the fuck up!", "Stupid!"],
+    "rude": ["Ok.", "Well ok."]
   },
   "deny": {
-    "friendly": ["Okay no problem."],
-    "happy": ["Okay :)"]
+    "friendly": ["Okay no problem.", "No problem."],
+    "happy": ["Okay :)", "No problem!"],
+    "aggressive": ["Say never no!!", "What!!??"],
+    "rude": ["Ok.", "Pfff."]
   },
   "affirm": {
-    "friendly": ["As you wish."],
-    "happy": ["Ok :)"]
+    "friendly": ["As you wish.", "It's your wish."],
+    "happy": ["Ok :)", "As you wish!"],
+    "aggressive": ["Fuck it!", "Damn ok!!"],
+    "rude": ["Ok.", "Ok then."]
   },
   "dont_know": {
-    "friendly": ["No problem."],
-    "happy": ["No problem :)"]
+    "friendly": ["No problem.", "It's okay."],
+    "happy": ["No problem :)", "It is okay :)"],
+    "aggressive": ["Why the fuck don't you know that come on!!!", "What the fuck!!"],
+    "rude": ["That is a problem.", "Come on, you really mean this?"]
   },
   "no_questions": {
-    "friendly": ["Sounds then clear for you. Something else?"],
-    "happy": ["Nice! Something else?"]
+    "friendly": ["Sounds then clear for you. Something else?", "Okay it's clear for you, something else?"],
+    "happy": ["Nice! Something else?", "Nice, then it is clear for you :). Something else?"],
+    "aggressive": ["I thought that it will never stopped!", "Finally done with your stupid questions!"],
+    "rude": ["Ok finally.", "Yesss finally."]
   },
 
 
 
   "ask_person_name": {
-    "friendly": ["What is your name, please?"],
-    "happy": ["Tell me your name."]
+    "friendly": ["What is your name, please?", "Can you tell me your name please?"],
+    "happy": ["Can you tell me your name please? :)", "What is your name? :)"],
+    "aggressive": ["What's your damn name!?", "What's your stupid name!?"],
+    "rude": ["Name?", "Your name?"]
   },
   "ask_car_insurance_new_car": {
-    "friendly": ["Is your car new?"],
-    "happy": ["Is it a new car?"]
+    "friendly": ["Is your car new or old?", "Is your car new?"],
+    "happy": ["Is it a new car? :)", "Is your car new or old? :)"],
+    "aggressive": ["Is your stupid car new or old!?", "Is that car of you new or old!?"],
+    "rude": ["New or old car?", "Is the car new?"]
   },
   "ask_car_insurance_car_type": {
-    "friendly": ["Which type of car do you have?"],
-    "happy": ["What type is your nice car?"]
+    "friendly": ["Which type of car do you have?", "What type of car do you have?"],
+    "happy": ["What type is your nice car?", "What type of car is it? :)"],
+    "aggressive": ["Tell me the fucking type of your stupid car!!", "What is the fucking type of that stupid car of you?"],
+    "rude": ["Tell me the type of the car.", "Just tell me what the type of the car is."]
   },
   "ask_car_insurance_year_car": {
-    "friendly": ["Of which year is your car?"],
-    "happy": ["Of which year is your nice car?"]
+    "friendly": ["What year is your car?", "What year is your car?"],
+    "happy": ["What year is your nice car?", "What year is your car? :)"],
+    "aggressive": ["What year is your stupid car!?", "Tell me what year your fucking car is."],
+    "rude": ["What year is the car?", "Tell me the year of the car."]
   },
   "ask_car_insurance_type_fuel": {
-    "friendly": ["What type of fuel do your car need?"],
-    "happy": ["What type of fuel needs your car?"]
+    "friendly": ["What type of fuel do your car need?", "What type of fuel do the car need?"],
+    "happy": ["What type of fuel needs your car?", "What type of fuel needs your nice car!"],
+    "aggressive": ["Tell me what fuel your damned car needs!!", "Just tell me the fucking fuel your car needs!!"],
+    "rude": ["What fuel needs your car?", "Tell me what fuel your car needs."]
   },
   "got_data_car_insurance": {
-    "friendly": ["That were all the questions. I have all the information now to help you further!"],
-    "happy": ["Well that's it! I will take care of your insurance :)"]
+    "friendly": ["That were all the questions. I have all the information now to help you further!", "That were all the questions. I have all the information now to help you further!"],
+    "happy": ["Well that's it! I will take care of your insurance :)", "Well that's it! I will take care of your insurance :)"],
+    "aggressive": ["That were all the stupid questions I got!", "That's all about the stupid insurance!"],
+    "rude": ["I got all the information.", "I now have all the information."]
   },
   "another_questions": {
-    "friendly": ["Are there still questions about something?"],
-    "happy": ["Are there any questions?"]
+    "friendly": ["Are there still questions about something?", "Are there still questions about something else?"],
+    "happy": ["Are there any questions?", "Are there still any questions?"],
+    "aggressive": ["Don't tell me you have questions.", "No stupid questions!!"],
+    "rude": ["I hope you don't have any questions.", "Questions?"]
   },
   "wrong_answer": {
     "friendly": ["I am sorry but it was not an answer on my question.", "Can you please answer my questions.", "Please answer my questions."],
-    "happy": ["Can you just answer the question :)", "Just answer the questions :)"]
+    "happy": ["Can you just answer the question please :)", "Just answer the questions please :)"],
+    "aggressive": ["Just answer the fucking questions!!", "Just answer the damn questions!!!"],
+    "rude": ["Just answer the questions.", "Answer the questions."]
   },
   "another_car_insurance": {
-    "friendly": ["No problem. I will help you."],
-    "happy": ["No problem! I will help you with it!"]
+    "friendly": ["No problem. I will help you.", "No problem. I can help you."],
+    "happy": ["No problem! I will help you with it!", "No problem! I will help you with it! :)"],
+    "aggressive": ["Omg you are meaning this, ok then!!!!!", "Another insurance!!! No come on, OK...!!!"],
+    "rude": ["Pffff ok then.", "You really mean this? Ok then..."]
   },
   "no_information": {
-    "friendly": ["I need that information to help you further."],
-    "happy": ["No problem! But I need that information to help you further."]
+    "friendly": ["I need that information to help you further.", "I need that information please to help you further."],
+    "happy": ["No problem! But I need that information to help you further.", "No problem! But I need that information please to help you further. :)"],
+    "aggressive": ["Just give the information!!", "Omg just give the information!!"],
+    "rude": ["I need that information, otherwise nothing!", "Just give me the information."]
   }
 }

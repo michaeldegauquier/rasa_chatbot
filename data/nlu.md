@@ -11,6 +11,7 @@
 - hi there bro
 - hi there!
 - hello there!
+- hi there stupid
 
 ## intent:goodbye
 - bye
@@ -53,6 +54,8 @@
 - My name is [Michael](person_name) and I want a car insurance
 - I want a car insurance please
 - I want a car insurance please!
+- i want a stupid car insurance
+- i just want a stupid car insurance
 
 ## intent:ask_after_insurances
 - Which one do you have?
@@ -121,6 +124,9 @@
 - yes it is
 - it is [old](new_car)
 - No it is an [old](new_car) car
+- yes it is a fucking damn [new](new_car) car like your head stupid man!
+- it is a fucking [old](new_car) car
+- yes it is a damn [new](new_car) stupid car
 
 ## intent:car_insurance_car_type
 - It is an [Audi A4](car_type)

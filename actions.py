@@ -11,6 +11,7 @@ from typing import Any, Text, Dict, List
 import json
 import requests
 import os
+import random
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
@@ -114,7 +115,7 @@ def choice_character_trait(character_traits_dict, text):
 
 
 def filter_list(character_traits):
-    character_traits_dict = {"friendly": 0.6, "happy": 0.9, "aggressive": -10}
+    character_traits_dict = {"friendly": 0.6, "happy": 0.9, "aggressive": -10, "rude": 0.0}
     new_dict = {}
 
     for key in character_traits_dict.keys():
@@ -141,6 +142,9 @@ class ActionGetCarDataPerson(Action):
         print(character_traits_dict)
         character_trait = choice_character_trait(character_traits_dict, user_text)
 
+        random_response = random.randint(0, 1)
+        print(random_response)
+
         if intent is not None:
             with open('responses/responses.json') as json_file:
                 data = json.load(json_file)
@@ -150,7 +154,7 @@ class ActionGetCarDataPerson(Action):
             if person_name is not None:
                 write_car_insurance("person", "person_name", person_name)
             else:
-                dispatcher.utter_message(f"{data['ask_person_name'][character_trait][0]}")
+                dispatcher.utter_message(f"{data['ask_person_name'][character_trait][random_response]}")
 
         elif check_car_insurance("car_insurance", "new_car") == 0:
             new_car = next(tracker.get_latest_entity_values('new_car'), None)
@@ -158,7 +162,7 @@ class ActionGetCarDataPerson(Action):
                 write_car_insurance("car_insurance", "new_car", new_car)
             else:
                 dispatcher.utter_message(
-                    f"{data['ask_car_insurance_new_car'][character_trait][0]}")
+                    f"{data['ask_car_insurance_new_car'][character_trait][random_response]}")
 
         elif check_car_insurance("car_insurance", "car_type") == 0:
             car_type = next(tracker.get_latest_entity_values('car_type'), None)
@@ -166,7 +170,7 @@ class ActionGetCarDataPerson(Action):
                 write_car_insurance("car_insurance", "car_type", car_type)
             else:
                 dispatcher.utter_message(
-                    f"{data['ask_car_insurance_car_type'][character_trait][0]}")
+                    f"{data['ask_car_insurance_car_type'][character_trait][random_response]}")
 
         elif check_car_insurance("car_insurance", "year_car") == 0:
             year_car = next(tracker.get_latest_entity_values('year_car'), None)
@@ -174,7 +178,7 @@ class ActionGetCarDataPerson(Action):
                 write_car_insurance("car_insurance", "year_car", year_car)
             else:
                 dispatcher.utter_message(
-                    f"{data['ask_car_insurance_year_car'][character_trait][0]}")
+                    f"{data['ask_car_insurance_year_car'][character_trait][random_response]}")
 
         elif check_car_insurance("car_insurance", "type_fuel") == 0:
             type_fuel = next(tracker.get_latest_entity_values('type_fuel'), None)
@@ -182,10 +186,10 @@ class ActionGetCarDataPerson(Action):
                 write_car_insurance("car_insurance", "type_fuel", type_fuel)
             else:
                 dispatcher.utter_message(
-                    f"{data['ask_car_insurance_type_fuel'][character_trait][0]}")
+                    f"{data['ask_car_insurance_type_fuel'][character_trait][random_response]}")
         elif check_car_insurance("car_insurance", "closed") == 0:
             write_car_insurance("car_insurance", "closed", "true")
-            dispatcher.utter_message(f"{data['another_questions'][character_trait][0]}")
+            dispatcher.utter_message(f"{data['another_questions'][character_trait][random_response]}")
 
         elif check_car_insurance("car_insurance", "closed") == 1:
             overwrite_car_insurance()
@@ -211,8 +215,8 @@ class ActionGetIntent(Action):
         character_traits_dict = filter_list(character_traits)
         print(character_traits_dict)
 
-        # random_character_trait = randint(0, len(character_traits) - 1)
-        # print(random_character_trait)
+        random_response = random.randint(0, 1)
+        print(random_response)
 
         if intent is not None:
             character_trait = choice_character_trait(character_traits_dict, user_text)
@@ -223,7 +227,7 @@ class ActionGetIntent(Action):
             if intent == "goodbye":
                 reset_car_insurance()
 
-            dispatcher.utter_message("{}".format(data[intent][character_trait][0]))
+            dispatcher.utter_message("{}".format(data[intent][character_trait][random_response]))
         else:
             dispatcher.utter_message("I don't know what you are talking about.")
 
@@ -246,10 +250,13 @@ class ActionAnotherQuestion(Action):
         print(character_traits_dict)
         character_trait = choice_character_trait(character_traits_dict, user_text)
 
+        random_response = random.randint(0, 1)
+        print(random_response)
+
         with open('responses/responses.json') as json_file:
             data = json.load(json_file)
 
-        dispatcher.utter_message("{}".format(data['another_questions'][character_trait][0]))
+        dispatcher.utter_message("{}".format(data['another_questions'][character_trait][random_response]))
 
         return []
 
@@ -270,10 +277,13 @@ class ActionWrongAnswer(Action):
         print(character_traits_dict)
         character_trait = choice_character_trait(character_traits_dict, user_text)
 
+        random_response = random.randint(0, 1)
+        print(random_response)
+
         with open('responses/responses.json') as json_file:
             data = json.load(json_file)
 
-        dispatcher.utter_message(f"{data['wrong_answer'][character_trait][0]}")
+        dispatcher.utter_message(f"{data['wrong_answer'][character_trait][random_response]}")
 
         return []
 
@@ -294,9 +304,12 @@ class ActionNoInformation(Action):
         print(character_traits_dict)
         character_trait = choice_character_trait(character_traits_dict, user_text)
 
+        random_response = random.randint(0, 1)
+        print(random_response)
+
         with open('responses/responses.json') as json_file:
             data = json.load(json_file)
 
-        dispatcher.utter_message(f"{data['no_information'][character_trait][0]}")
+        dispatcher.utter_message(f"{data['no_information'][character_trait][random_response]}")
 
         return []
