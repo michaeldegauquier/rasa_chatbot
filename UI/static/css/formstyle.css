@@ -1,0 +1,36 @@
+.chatbotinterface {
+    margin-top: -12%;
+}
+
+.center {
+    margin-left: auto;
+}
+
+.form {
+    width: 30%;
+    margin: 1% auto 0 auto;
+}
+
+.normalButton {
+    background: #6072e6;
+    border: none;
+    color: white;
+    padding: 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+.normalButton:hover {
+    background: #5160c2;
+}
+
+.hrStyle {
+    width: 35%;
+    margin: auto;
+}

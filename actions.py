@@ -43,7 +43,6 @@ def overwrite_car_insurance():
     with open('database/person_data.json', 'w') as file:
         json.dump(data, file, indent=4)
 
-
 def write_car_insurance(intent, entity_name, entity_value):
     with open('database/person_data.json', 'r') as file:
         data = json.load(file)
@@ -102,11 +101,12 @@ def sentiment_analysis(text):
 
 def choice_character_trait(character_traits_dict, text):
     array_size = len(character_traits_dict)
-    sentiment = sentiment_analysis(text)
 
     if array_size == 1:
-        print(list(character_traits_dict.keys())[0])
+        return list(character_traits_dict.keys())[0]
     elif array_size > 1:
+        sentiment = sentiment_analysis(text)
+
         if 'aggressive' in character_traits_dict and (0 <= sentiment <= 0.017) or (0.019 <= sentiment <= 0.060):
             print('aggressive')
             return 'aggressive'
