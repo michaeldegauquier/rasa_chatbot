@@ -34,3 +34,12 @@
     width: 35%;
     margin: auto;
 }
+
+.inline {
+    display: inline;
+}
+
+.error {
+    color: red;
+    display: inline;
+}

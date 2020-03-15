@@ -1,9 +1,12 @@
 $(function() {
     console.log("ready!");
 
-    $("form").submit(function(event) {
+    $("form").submit(async function(event) {
+        let a = false;
         let inputForm = $("input:first").val();
         if (inputForm !== "") {
+            $("span.loading").text("Loading...").show();
+
             const Urlc = 'https://wcl0c5rsb4.execute-api.us-east-1.amazonaws.com/deployct/character-trait/1';
             let dataObject = {"Id": 1, "character_traits": [inputForm]};
 
@@ -31,6 +34,7 @@ $(function() {
                 url: Url,
                 success: function (result) {
                     console.log(result);
+                    location.reload(true);
                 },
                 error: function (error) {
                     console.log(error);
@@ -38,7 +42,7 @@ $(function() {
             });
         }
         else {
-            $("p").text("Not valid!").show().fadeOut(500);
+            $("span.error").text("Not valid!").show().fadeOut(1000);
         }
         event.preventDefault();
     });
