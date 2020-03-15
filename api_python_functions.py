@@ -8,7 +8,7 @@ import sys
 
 app = Flask(__name__)
 
-
+# this api is for running python functions via JavaScript
 @app.route('/reset_bot')
 def index():
     try:
@@ -57,3 +57,7 @@ def character_traits():
 
 if __name__ == "__main__":
     app.run(port=8080, debug=True)
+
+# Reddit. Execute a python script on button click? Geraadpleegd via
+# https://www.reddit.com/r/learnpython/comments/9xyozb/execute_a_python_script_on_button_click/
+# Geraadpleegd op 14 maart 2020

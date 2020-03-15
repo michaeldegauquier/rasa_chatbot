@@ -30,6 +30,7 @@ class ActionHelloWorld(Action):
         return []
 
 
+# reset of car insurance data without the name of the person (user)
 def overwrite_car_insurance():
     with open('database/clean_person_data.json', 'r') as file:
         data = json.load(file)
@@ -43,6 +44,8 @@ def overwrite_car_insurance():
     with open('database/person_data.json', 'w') as file:
         json.dump(data, file, indent=4)
 
+
+# write car insurance data to the file
 def write_car_insurance(intent, entity_name, entity_value):
     with open('database/person_data.json', 'r') as file:
         data = json.load(file)
@@ -54,6 +57,7 @@ def write_car_insurance(intent, entity_name, entity_value):
         json.dump(data, file, indent=4)
 
 
+# checking the data of the car insurance that is not filled in
 def check_car_insurance(intent, entity_name):
     with open('database/person_data.json', 'r') as file:
         data = json.load(file)
@@ -63,6 +67,7 @@ def check_car_insurance(intent, entity_name):
             return 1
 
 
+# full reset of the car insurance data
 def reset_car_insurance():
     with open('database/clean_person_data.json', 'r') as file:
         data = json.load(file)
@@ -73,6 +78,7 @@ def reset_car_insurance():
         json.dump(data, file, indent=4)
 
 
+# get the sentiment (percentage) of the user his input
 def sentiment_analysis(text):
     url = 'https://westeurope.api.cognitive.microsoft.com/text/analytics/v2.1/sentiment'
 
@@ -99,6 +105,7 @@ def sentiment_analysis(text):
     return sentiment
 
 
+# this makes a choice which character trait it has to take based on the sentiment
 def choice_character_trait(character_traits_dict, text):
     array_size = len(character_traits_dict)
 
@@ -116,6 +123,7 @@ def choice_character_trait(character_traits_dict, text):
             return closest_key
 
 
+# it filters the character trait list and returns a dictionary with the right character traits
 def filter_list(character_traits):
     character_traits_dict = {"friendly": 0.6, "happy": 0.9, "aggressive": -10, "rude": 0.0}
     new_dict = {}
@@ -127,6 +135,8 @@ def filter_list(character_traits):
     return new_dict
 
 
+# function to store data about the car insurance
+# the chatbot knows with this function which questions it has to ask to the user about the car insurance
 class ActionGetCarDataPerson(Action):
 
     def name(self):
@@ -199,6 +209,7 @@ class ActionGetCarDataPerson(Action):
         return []
 
 
+# chatbot returns a response to the user based on the incoming intent
 class ActionGetIntent(Action):
 
     def name(self):
@@ -315,3 +326,11 @@ class ActionNoInformation(Action):
         dispatcher.utter_message(f"{data['no_information'][character_trait][random_response]}")
 
         return []
+
+# Rasa. Actions. Geraadpleegd via
+# https://rasa.com/docs/rasa/1.0.9/core/actions/
+# Geraadpleegd op 18 januari 2020
+
+# Extracting the current intent from a custom action. Geraadpleegd via
+# https://forum.rasa.com/t/solved-extracting-the-current-intent-from-a-custom-action/1446
+# Geraadpleegd op 22 februari 2020

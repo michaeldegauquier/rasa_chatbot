@@ -136,3 +136,8 @@ $(document).on("click", ".menu .menuChips", function () {
 	send(payload);
 	$('.suggestions').remove(); //delete the suggestions 
 });
+
+
+// GK Techy. Rasa Core Chatbot Custom UI. Geraadpleegd via
+// https://www.youtube.com/watch?v=Fyap_IP1i3Q
+// Geraadpleegd op 20 januari 2020.
