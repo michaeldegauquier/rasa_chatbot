@@ -3,73 +3,97 @@
     "friendly": ["Hello, how can I help you?", "Good day, how can I help?"],
     "happy": ["Hi there! How can I help you?", "Hello there! How can I help?"],
     "aggressive": ["Hello stupid, what's the problem?", "Damn! What the fuck is the problem?!"],
-    "rude": ["Omg you need help for what?", "Why do I have to help you?"]
+    "rude": ["Omg you need help for what?", "Why do I have to help you?"],
+    "lazy": ["Hello", "Hi"],
+    "pushy": ["Hi hello there", "Hi there"]
   },
   "goodbye": {
     "friendly": ["Goodbye", "Have a nice day."],
     "happy": ["Goodbye!", "Have a good day further!"],
     "aggressive": ["Let me alone stupid!", "Just don't talk to me!"],
-    "rude": ["Finally done", "Yeah bye"]
+    "rude": ["Finally done", "Yeah bye"],
+    "lazy": ["Bye", "Goodbye"],
+    "pushy": ["Have a nice day", "Have a good day"]
   },
   "person_name": {
     "friendly": ["How can I help you?", "How can I help?"],
     "happy": ["How can I help you my customer?", "How can I help you? :)"],
     "aggressive": ["What the fuck is the problem?", "For what do you need help stupid?"],
-    "rude": ["Need help?", "Ok, problems?"]
+    "rude": ["Need help?", "Ok, problems?"],
+    "lazy": ["I hope you don't need help?", "Ok, you really need help or what?"],
+    "pushy": ["I must help you. Tell me what you need.", "I will help you. Tell me what your problems are."]
   },
   "want_insurance": {
-    "friendly": ["Which insurance do you want?", "Which insurance do you want to have?"],
-    "happy": ["Which insurance do you wish?", "Which insurance do you want? :)"],
+    "friendly": ["What insurance do you want?", "What insurance do you want to have?"],
+    "happy": ["What insurance do you wish?", "What insurance do you want? :)"],
     "aggressive": ["What insurance stupid!!!?", "What kind of stupid insurance!??"],
-    "rude": ["Which insurance?", "What insurance?"]
+    "rude": ["Which insurance?", "What insurance?"],
+    "lazy": ["OK, what insurance?", "What insurance do you need?"],
+    "pushy": ["Say me what insurance you want.", "Tell we what insurance you want."]
   },
   "car_insurance": {
     "friendly": ["That's no problem! We can handle this for you.", "No problem!"],
     "happy": ["That's no problem! We can handle it!", "No problem! We can handle it! :)"],
     "aggressive": ["Omg you are meaning this!! Just answer the stupid questions!", "OK THEN! Just answer the stupid questions!"],
-    "rude": ["Ok just answer some questions.", "Ok"]
+    "rude": ["Ok just answer some questions.", "Ok"],
+    "lazy": ["OK then, just answer the questions.", "Pfff, just answer the questions."],
+    "pushy": ["Answer all my questions about the insurance.", "Answer my questions about the insurance."]
   },
   "ask_after_insurances": {
     "friendly": ["We offer car insurances to our customers.", "We offer car insurances to you."],
     "happy": ["We can offer you a car insurance!", "We can offer you a nice car insurance for tne right price!"],
     "aggressive": ["Just a stupid car insurance!", "Stupid car insurances!"],
-    "rude": ["Car insurance.", "Just a car insurance."]
+    "rude": ["Car insurance.", "Just a car insurance."],
+    "lazy": ["A car insurance", "Just a car insurance."],
+    "pushy": ["A car insurance, but take it.", "Car insurance, I should take it if I was you."]
   },
   "price_car_insurance": {
     "friendly": ["It is between the 500 and 2300 euros.", "It is a price between the 500 and 2300 euros."],
     "happy": ["It is just between the 500 and 2300 euros :)", "A nice price between the 500 and 2300 euros!"],
     "aggressive": ["I don't know!!", "I can't know everything!!"],
-    "rude": ["Between 500 and 2300 euros.", "Idk, between 500 and 2300 euros."]
+    "rude": ["Between 500 and 2300 euros.", "Idk, between 500 and 2300 euros."],
+    "lazy": ["Between 500 and 2300 euros.", "I don't know, I can't find it on my pc. But it is around the 2000 euros."],
+    "pushy": ["Between the 500 and 2300 euros, but I should take it.", "Not much, it is around the 1500 euros. Tale it and you are good!"]
   },
   "thank": {
     "friendly": ["No problem.", "No problem, it is my job."],
     "happy": ["No problem!", "No problem, it is my job! :)"],
     "aggressive": ["Just shut the fuck up!", "Stupid!"],
-    "rude": ["Ok.", "Well ok."]
+    "rude": ["Ok.", "Well ok."],
+    "lazy": ["Np", "It's okay."],
+    "pushy": ["No problem!", "No problem!"]
   },
   "deny": {
     "friendly": ["Okay no problem.", "No problem."],
     "happy": ["Okay :)", "No problem!"],
     "aggressive": ["Say never no!!", "What!!??"],
-    "rude": ["Ok.", "Pfff."]
+    "rude": ["Ok.", "Pfff."],
+    "lazy": ["Ok then.", "Okay."],
+    "pushy": ["Come on!", "No problem!"]
   },
   "affirm": {
     "friendly": ["As you wish.", "It's your wish."],
     "happy": ["Ok :)", "As you wish!"],
     "aggressive": ["Fuck it!", "Damn ok!!"],
-    "rude": ["Ok.", "Ok then."]
+    "rude": ["Ok.", "Ok then."],
+    "lazy": ["Ok then.", "Ok."],
+    "pushy": ["As you wish.", "Well okay."]
   },
   "dont_know": {
     "friendly": ["No problem.", "It's okay."],
     "happy": ["No problem :)", "It is okay :)"],
     "aggressive": ["Why the fuck don't you know that come on!!!", "What the fuck!!"],
-    "rude": ["That is a problem.", "Come on, you really mean this?"]
+    "rude": ["That is a problem.", "Come on, you really mean this?"],
+    "lazy": ["Ok so be it.", "Ok."],
+    "pushy": ["Come on I know you know it.", "Well okay."]
   },
   "no_questions": {
     "friendly": ["Sounds then clear for you. Something else?", "Okay it's clear for you, something else?"],
     "happy": ["Nice! Something else?", "Nice, then it is clear for you :). Something else?"],
     "aggressive": ["I thought that it will never stopped!", "Finally done with your stupid questions!"],
-    "rude": ["Ok finally.", "Yesss finally."]
+    "rude": ["Ok finally.", "Yesss finally."],
+    "lazy": ["Ok.", "Ok."],
+    "pushy": ["OK, I hope you will choose for our insurance.", "Perfect, everybody happy."]
   },
 
 
@@ -78,60 +102,80 @@
     "friendly": ["What is your name, please?", "Can you tell me your name please?"],
     "happy": ["Can you tell me your name please? :)", "What is your name? :)"],
     "aggressive": ["What's your damn name!?", "What's your stupid name!?"],
-    "rude": ["Name?", "Your name?"]
+    "rude": ["Name?", "Your name?"],
+    "lazy": ["What is your name?", "Name?"],
+    "pushy": ["Tell me your name.", "What is your name?"]
   },
   "ask_car_insurance_new_car": {
     "friendly": ["Is your car new or old?", "Is your car new?"],
     "happy": ["Is it a new car? :)", "Is your car new or old? :)"],
     "aggressive": ["Is your stupid car new or old!?", "Is that car of you new or old!?"],
-    "rude": ["New or old car?", "Is the car new?"]
+    "rude": ["New or old car?", "Is the car new?"],
+    "lazy": ["Is your car new or old?", "Is your car new?"],
+    "pushy": ["Is it a new or old car?", "Is your car new?"]
   },
   "ask_car_insurance_car_type": {
     "friendly": ["Which type of car do you have?", "What type of car do you have?"],
     "happy": ["What type is your nice car?", "What type of car is it? :)"],
     "aggressive": ["Tell me the fucking type of your stupid car!!", "What is the fucking type of that stupid car of you?"],
-    "rude": ["Tell me the type of the car.", "Just tell me what the type of the car is."]
+    "rude": ["Tell me the type of the car.", "Just tell me what the type of the car is."],
+    "lazy": ["Type of the car?", "Type car?"],
+    "pushy": ["Tell me what the type is of the car.", "Tell me what the type is of your car."]
   },
   "ask_car_insurance_year_car": {
     "friendly": ["What year is your car?", "What year is your car?"],
     "happy": ["What year is your nice car?", "What year is your car? :)"],
     "aggressive": ["What year is your stupid car!?", "Tell me what year your fucking car is."],
-    "rude": ["What year is the car?", "Tell me the year of the car."]
+    "rude": ["What year is the car?", "Tell me the year of the car."],
+    "lazy": ["What year is the car?", "What year is your car?"],
+    "pushy": ["Tell me the year of the car.", "Tell me what the year is from the car."]
   },
   "ask_car_insurance_type_fuel": {
     "friendly": ["What type of fuel do your car need?", "What type of fuel do the car need?"],
     "happy": ["What type of fuel needs your car?", "What type of fuel needs your nice car!"],
     "aggressive": ["Tell me what fuel your damned car needs!!", "Just tell me the fucking fuel your car needs!!"],
-    "rude": ["What fuel needs your car?", "Tell me what fuel your car needs."]
+    "rude": ["What fuel needs your car?", "Tell me what fuel your car needs."],
+    "lazy": ["What fuel?", "What fuel needs your car?"],
+    "pushy": ["Tell me what fuel your car needs.", "Tell me what fuel your car needs."]
   },
   "got_data_car_insurance": {
     "friendly": ["That were all the questions. I have all the information now to help you further!", "That were all the questions. I have all the information now to help you further!"],
     "happy": ["Well that's it! I will take care of your insurance :)", "Well that's it! I will take care of your insurance :)"],
     "aggressive": ["That were all the stupid questions I got!", "That's all about the stupid insurance!"],
-    "rude": ["I got all the information.", "I now have all the information."]
+    "rude": ["I got all the information.", "I now have all the information."],
+    "lazy": ["That was all.", "That was it."],
+    "pushy": ["That was the information I needed. Now I can handle it.", "Now I can handle your insurance. That were all the questions."]
   },
   "another_questions": {
     "friendly": ["Are there still questions about something?", "Are there still questions about something else?"],
     "happy": ["Are there any questions?", "Are there still any questions?"],
     "aggressive": ["Don't tell me you have questions.", "No stupid questions!!"],
-    "rude": ["I hope you don't have any questions.", "Questions?"]
+    "rude": ["I hope you don't have any questions.", "Questions?"],
+    "lazy": ["Another questions?", "Questions?"],
+    "pushy": ["I think you have no questions? I will handle the insurance for you.", "Do you have questions about the insurance?"]
   },
   "wrong_answer": {
-    "friendly": ["I am sorry but it was not an answer on my question.", "Can you please answer my questions.", "Please answer my questions."],
+    "friendly": ["I am sorry but it was not an answer on my question.", "Can you please answer my questions."],
     "happy": ["Can you just answer the question please :)", "Just answer the questions please :)"],
     "aggressive": ["Just answer the fucking questions!!", "Just answer the damn questions!!!"],
-    "rude": ["Just answer the questions.", "Answer the questions."]
+    "rude": ["Just answer the questions.", "Answer the questions."],
+    "lazy": ["Come on, just answer my questions, it is hard for me.", "Come on, just give an answer to my questions. It's already hard enough for me."],
+    "pushy": ["Answer just my questions please.", "Just answer my questions."]
   },
   "another_car_insurance": {
     "friendly": ["No problem. I will help you.", "No problem. I can help you."],
     "happy": ["No problem! I will help you with it!", "No problem! I will help you with it! :)"],
     "aggressive": ["Omg you are meaning this, ok then!!!!!", "Another insurance!!! No come on, OK...!!!"],
-    "rude": ["Pffff ok then.", "You really mean this? Ok then..."]
+    "rude": ["Pff ok then.", "You really mean this? Ok then..."],
+    "lazy": ["Ok then pff", "Pff ok then."],
+    "pushy": ["Sure, I will help you.", "Of course. I will help you."]
   },
   "no_information": {
     "friendly": ["I need that information to help you further.", "I need that information please to help you further."],
     "happy": ["No problem! But I need that information to help you further.", "No problem! But I need that information please to help you further. :)"],
     "aggressive": ["Just give the information!!", "Omg just give the information!!"],
-    "rude": ["I need that information, otherwise nothing!", "Just give me the information."]
+    "rude": ["I need that information, otherwise nothing!", "Just give me the information."],
+    "lazy": ["Pff, just give me that information.", "Pff, come on give me the right information."],
+    "pushy": ["I really need that information to help you.", "Just give me the right information to help you."]
   }
 }
