@@ -8,5 +8,12 @@
         "year_car": "",
         "type_fuel": "",
         "closed": ""
+    },
+    "fire_insurance": {
+        "type_building": "",
+        "construction_year": "",
+        "construction_home": "",
+        "business_home": "",
+        "closed": ""
     }
 }
