@@ -125,7 +125,7 @@ def choice_character_trait(character_traits_dict, text):
 
 # it filters the character trait list and returns a dictionary with the right character traits
 def filter_list(character_traits):
-    character_traits_dict = {"friendly": 0.6, "happy": 0.9, "aggressive": -10, "rude": 0.0}
+    character_traits_dict = {"friendly": 0.6, "happy": 0.9, "aggressive": -10, "rude": 0.0, "lazy": 0.3, "pushy": 0.4}
     new_dict = {}
 
     for key in character_traits_dict.keys():
