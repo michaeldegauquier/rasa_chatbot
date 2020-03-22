@@ -1,6 +1,6 @@
 {
     "person": {
-        "person_name": ""
+        "person_name": "Jan"
     },
     "car_insurance": {
         "new_car": "",
@@ -10,10 +10,10 @@
         "closed": ""
     },
     "fire_insurance": {
-        "type_building": "",
-        "construction_year": "",
-        "construction_home": "",
-        "business_home": "",
-        "closed": ""
+        "type_building": "apartment",
+        "construction_year": "2005",
+        "construction_home": "stone",
+        "business_home": "no",
+        "closed": "true"
     }
 }

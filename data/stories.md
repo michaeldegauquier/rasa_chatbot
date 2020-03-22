@@ -688,3 +688,400 @@
     - action_get_intent
 * goodbye
     - action_get_intent
+
+## Get_fire_insurance_1
+
+* greet
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Pol"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_type_building{"type_building":"apartment"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_year{"construction_year":"1990"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_home{"construction_home":"wood"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_business_home{"business_home":"yes"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+
+## Get_fire_insurance_2
+
+* greet
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Pol"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_type_building{"type_building":"apartment"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_year{"construction_year":"2008"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_home{"construction_home":"stone"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_business_home{"business_home":"no"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+
+## Get_fire_insurance_3
+
+* greet
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_type_building{"type_building":"mansion"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* car_insurance_year_car{"construction_year":"1992"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_home{"construction_home":"wood"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_business_home{"business_home":"yes"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* no_questions
+    - action_get_intent
+* thank
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_insurance_4
+
+* greet
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_type_building{"type_building":"mansion"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_year{"construction_year":"1992"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_home{"construction_home":"stone"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_business_home{"business_home":"yes"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* price_fire_insurance
+    - action_get_intent
+    - action_another_question
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_insurance_5
+
+* greet
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Jan"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_type_building{"type_building":"apartment"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_year{"construction_year":"2005"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_construction_home{"construction_home":"stone"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_business_home{"business_home":"no"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* price_fire_insurance
+    - action_get_intent
+    - action_another_question
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_insurance_6
+
+* greet
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Jan"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_type_building{"type_building":"apartment"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_construction_year{"construction_year":"2005"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_construction_home{"construction_home":"stone"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_business_home{"business_home":"no"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* price_fire_insurance
+    - action_get_intent
+    - action_another_question
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_insurance_7
+
+* greet
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Jan"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_type_building{"type_building":"apartment"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_construction_year{"construction_year":"2005"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_construction_home{"construction_home":"stone"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_business_home{"business_home":"no"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* price_fire_insurance
+    - action_get_intent
+    - action_another_question
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_insurance_8
+
+* greet
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Jan"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_type_building{"type_building":"apartment"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_construction_year{"construction_year":"2005"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_home{"construction_home":"stone"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_business_home{"business_home":"no"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* price_fire_insurance
+    - action_get_intent
+    - action_another_question
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_insurance_9
+
+* greet
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Jan"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_type_building{"type_building":"apartment"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_year{"construction_year":"2005"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_construction_home{"construction_home":"stone"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_business_home{"business_home":"no"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* price_fire_insurance
+    - action_get_intent
+    - action_another_question
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_insurance_10
+
+* greet
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Jan"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_no_information
+* fire_insurance_type_building{"type_building":"apartment"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_year{"construction_year":"2005"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_home{"construction_home":"stone"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_business_home{"business_home":"no"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* price_fire_insurance
+    - action_get_intent
+    - action_another_question
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_insurance_11
+
+* greet
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Jan"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_type_building{"type_building":"apartment"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_year{"construction_year":"2005"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_home{"construction_home":"stone"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_business_home{"business_home":"no"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* price_fire_insurance
+    - action_get_intent
+    - action_another_question
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_insurance_12
+
+* greet
+    - action_get_intent
+* want_insurance
+    - action_get_intent
+* ask_after_insurances
+    - action_get_intent    
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Jan"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_type_building{"type_building":"apartment"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_year{"construction_year":"2005"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_home{"construction_home":"stone"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_business_home{"business_home":"no"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* price_fire_insurance
+    - action_get_intent
+    - action_another_question
+* no_questions
+    - action_get_intent
+* deny
+    - action_get_intent
+* goodbye
+    - action_get_intent

@@ -39,6 +39,14 @@
     "lazy": ["OK then, just answer the questions.", "Pfff, just answer the questions."],
     "pushy": ["Answer all my questions about the insurance.", "Answer my questions about the insurance."]
   },
+  "fire_insurance": {
+    "friendly": ["That's no problem! We can handle this for you.", "No problem!"],
+    "happy": ["That's no problem! We can handle it!", "No problem! We can handle it! :)"],
+    "aggressive": ["Omg you are meaning this!! Just answer the stupid questions!", "OK THEN! Just answer the stupid questions!"],
+    "rude": ["Ok just answer some questions.", "Ok"],
+    "lazy": ["OK then, just answer the questions.", "Pfff, just answer the questions."],
+    "pushy": ["Answer all my questions about the insurance.", "Answer my questions about the insurance."]
+  },
   "ask_after_insurances": {
     "friendly": ["We offer car and fire insurances to our customers.", "We offer car and fire insurances to you."],
     "happy": ["We can offer you a car insurance or fire insurance!", "We can offer you a nice car or fire insurance for tne right price!"],

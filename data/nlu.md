@@ -27,6 +27,7 @@
 - ok goodbye
 - Have a nice day
 - Goodbye!
+- goodbye!
 
 ## intent:want_insurance
 - I want an insurance
@@ -57,11 +58,32 @@
 - i want a stupid car insurance
 - i just want a stupid car insurance
 
+## intent:fire_insurance
+- I would like to have a fire insurance.
+- A fire insurance
+- fire
+- fire insurance
+- Just a fire insurance
+- I would like to have a fire insurance for my home
+- i want a fire insurance
+- ok i want a fire insurance
+- i want a fire insurance please
+- i want another fire insurance
+- my name is [Michael](person_name) and I want a fire insurance
+- I want a fire insurance
+- My name is [Michael](person_name) and I want a fire insurance
+- I want a fire insurance please
+- I want a fire insurance please!
+- i want a stupid fire insurance
+- i just want a stupid fire insurance
+- i want a fire insurance for my home
+
 ## intent:ask_after_insurances
 - Which one do you have?
 - Which insurances do you have?
 - Which insurances do you still have?
 - which one do you have?
+- which insurances do you have?
 
 ## intent:thank
 - Thank you
@@ -78,6 +100,7 @@
 - No sorry
 - No thats all
 - no that was it
+- [no](business_home)
 
 ## intent:affirm
 - Yes
@@ -92,6 +115,7 @@
 - idk
 - i really dont know
 - i dont know
+- i don't know sorry
 
 ## intent:price_car_insurance
 - What is the price from a car insurance?
@@ -101,6 +125,15 @@
 - yes, what is the price for that insurance?
 - yes, how much is the price of a car insurance
 
+## intent:price_fire_insurance
+- What is the price from a fire insurance?
+- Whats the price of the fire insurance?
+- Price of fire insurance?
+- yes, how much is the price fom the fire insurance?
+- yes, what is the price for that insurance?
+- yes, how much is the price of a fire insurance
+- yes, what is the price of a fire insurance?
+
 ## intent:person_name
 - My name is [Michael](person_name)
 - Name is [Michael](person_name)
@@ -108,6 +141,20 @@
 - [Michael](person_name)
 - [Michael](person_name) is the name
 - [Michael](person_name) is my name
+- My name is [Charlie](person_name)
+- Name is [Kenneth](person_name)
+- The name is [Jos](person_name)
+- [Pol](person_name)
+- [Xander](person_name) is the name
+- [Steve](person_name) is my name
+- My name is [Yoda](person_name)
+- Name is [Han](person_name)
+- The name is [Luke](person_name)
+- [Dan](person_name)
+- [Mich](person_name) is the name
+- [Pieter](person_name) is my name
+- my name is [Pol](person_name)
+- my name is [Jan](person_name)
 
 ## intent:car_insurance_new_car
 - It is a [new](new_car)
@@ -117,7 +164,6 @@
 - it is [new](new_car)
 - [old](new_car) one
 - [new](new_car) one
-- [no](new_car)
 - [yes](new_car)
 - yes it is a [new](new_car) car
 - yes it is [new](new_car)
@@ -154,6 +200,7 @@
 - It is a [Volkswagen](car_type)
 - i drive with a [BMW](car_type)
 - it is a [Volkswagen](car_type)
+- a [Seat](car_type)
 
 ## intent:car_insurance_year_car
 - It is from [2020](year_car)
@@ -188,6 +235,7 @@
 - it was from [2016](year_car)
 - from [2011](year_car)
 - from [2014](year_car)
+- it is from [2005](year_car)
 
 ## intent:car_insurance_type_fuel
 - The fuel is [benzine](type_fuel)
@@ -207,6 +255,117 @@
 - I thought it was [diesel](type_fuel)
 - it needs [benzine](type_fuel)
 - it is an [electric](type_fuel) car
+
+## intent:fire_insurance_type_building
+- I have an [apartment](type_building).
+- It is an [apartment](type_building).
+- It is a [house](type_building).
+- A [mansion](type_building).
+- It is a [mansion](type_building).
+- A [house](type_building)
+- The type is a [apartment](type_building)
+- Type building is a [house](type_building)
+- it is an [apartment](type_building)
+- I have a [mansion](type_building)
+- i have a [mansion](type_building)
+- I have an [apartment](type_building)
+
+## intent:fire_insurance_construction_year
+- The construction year is [1990](construction_year)
+- The construction year is [1998](construction_year)
+- The construction year is [1905](construction_year)
+- The construction year is [2020](construction_year)
+- The construction year is [2016](construction_year)
+- The construction year is [2005](construction_year)
+- The construction year is [2008](construction_year)
+- It is [2007](construction_year)
+- It is [2003](construction_year)
+- It is [2014](construction_year)
+- It is [2019](construction_year)
+- It is [1935](construction_year)
+- It is [1980](construction_year)
+- It is [1978](construction_year)
+- it is [1990](construction_year)
+- it is from [2003](construction_year)
+- it is from [2005](construction_year)
+- it is from [2011](construction_year)
+- it is from [2019](construction_year)
+- it is from [2010](construction_year)
+- it is from [2001](construction_year)
+- it is from [2002](construction_year)
+- it is from [1990](construction_year)
+- it is from [1998](construction_year)
+- it is from [1991](construction_year)
+- it is from [1994](construction_year)
+- it is from [1953](construction_year)
+- it is from [1992](construction_year)
+- the construction year is [2005](construction_year)
+
+## intent:fire_insurance_construction_home
+- The construction of my home is [wood](construction_home)
+- The construction of my home is [stone](construction_home)
+- The construction of my home is [concrete](construction_home)
+- The construction of my home is [light prefab](construction_home)
+- It is [wood](construction_home)
+- It is [stone](construction_home)
+- It is [concrete](construction_home)
+- It is [light prefab](construction_home)
+- The construction is [wood](construction_home)
+- The construction is [stone](construction_home)
+- The construction is [concrete](construction_home)
+- The construction is [light prefab](construction_home)
+- the construction is [wood](construction_home)
+- it is [wood](construction_home)
+- it is made of [wood](construction_home)
+- it is made of [stone](construction_home)
+- ok i think it is made of [stone](construction_home)
+
+## intent:fire_insurance_business_home
+- [yes](business_home)
+- [yes](business_home)
+- [yes](business_home)
+- [yes](business_home)
+- [yes](business_home)
+- [yes](business_home)
+- [yes](business_home)
+- [no](business_home)
+- [no](business_home)
+- [no](business_home)
+- [no](business_home)
+- [no](business_home)
+- [no](business_home)
+- [no](business_home)
+- [no](business_home)
+- [no](business_home)
+- [yes](business_home) it is used as a business
+- [yes](business_home) it is used as a business
+- [yes](business_home) it is used as a business
+- [yes](business_home) it is used as a business
+- [yes](business_home) it is used as a business
+- [no](business_home) it is not used as a business
+- [no](business_home) it is not used as a business
+- [no](business_home) it is not used as a business
+- [no](business_home) it is not used as a business
+- [no](business_home) it is not used as a business
+- [yes](business_home) i use my home as a business
+- [no](business_home) i use my home not as a business
+- [no](business_home) i use my home not as a business
+- [no](business_home) i use my home not as a business
+- [no](business_home) i use my home not as a business
+- [yes](business_home) i do
+- [yes](business_home) i do
+- [yes](business_home) i do
+- [yes](business_home) i do
+- [yes](business_home) i do
+- [no](business_home) i don't
+- [no](business_home) i don't
+- [no](business_home) i don't
+- [no](business_home) i don't
+- [no](business_home) i don't use it as my business
+- [no](business_home) i don't use it as my business
+- [no](business_home) i don't use it as my business
+- [no](business_home) i don't use it as my business
+- [no](business_home) i don't use it as my business
 
 ## intent:no_questions
 - no i dont have any questions anymore
