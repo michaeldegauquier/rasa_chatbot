@@ -114,7 +114,7 @@ def choice_character_trait(character_traits_dict, text):
     elif array_size > 1:
         sentiment = sentiment_analysis(text)
 
-        if 'aggressive' in character_traits_dict and (0 <= sentiment <= 0.017) or (0.019 <= sentiment <= 0.060):
+        if 'aggressive' in character_traits_dict and ((0 <= sentiment <= 0.017) or (0.019 <= sentiment <= 0.060)):
             print('aggressive')
             return 'aggressive'
         else:

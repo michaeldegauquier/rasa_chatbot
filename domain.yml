@@ -21,6 +21,14 @@ intents:
 - fire_insurance_business_home
 - fire_insurance_construction_year
 - price_fire_insurance
+- meaning_type_fuel
+- meaning_car_type
+- meaning_construction_year
+- meaning_business_home
+- meaning_year_car
+- meaning_new_car
+- meaning_construction_home
+- meaning_type_building
 entities:
 - person_name
 - year_car
