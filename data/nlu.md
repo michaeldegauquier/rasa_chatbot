@@ -367,6 +367,42 @@
 - [no](business_home) i don't use it as my business
 - [no](business_home) i don't use it as my business
 
+## intent:meaning_new_car
+- What do you mean with a new car?
+- What do you mean with a new or old car?
+- What do you mean with a old car?
+
+## intent:meaning_car_type
+- What do you mean with type of the car?
+- What do you mean with type of a car?
+- What do you mean with type?
+
+## intent:meaning_year_car
+- What do you mean with year car?
+
+## intent:meaning_type_fuel
+- What do you mean with the type of the fuel?
+- What do you mean with the type fuel?
+- What do you mean with the type?
+
+## intent:meaning_type_building
+- What do you mean with type building?
+- What do you mean with type?
+
+## intent:meaning_construction_year
+- What do you mean with the year of construction?
+- What do you mean with construction year?
+
+## intent:meaning_construction_home
+- What do you mean with the construction of my home?
+- What do you mean with the construction of the building?
+- What do you mean with construction home?
+
+## intent:meaning_business_home
+- What do you mean with using your home as a business?
+- What do you mean with home as a business?
+- Home as a business?
+
 ## intent:no_questions
 - no i dont have any questions anymore
 - no i dont

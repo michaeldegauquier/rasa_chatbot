@@ -111,7 +111,70 @@
     "lazy": ["Ok.", "Ok."],
     "pushy": ["OK, I hope you will choose for our insurance.", "Perfect, everybody happy."]
   },
-
+  "meaning_new_car": {
+    "friendly": ["An old car is more than a year old. A new car is less than a year old.", "An old car is more than a year old and a new car is less than a year old."],
+    "happy": ["A new car is less than a year old and an old one is older than a year. :)", "An old car is more than a year old. A new car is less than a year old. :)"],
+    "aggressive": ["A new car is just new and an old one is old, what a stupid question!!", "Old, new, it doesn't matter, stop with your stupid questions!!"],
+    "rude": ["You serious? A new car is new and an old car is older than a year.", "You serious? A new car is less than a year old and an old car is more than a year old."],
+    "lazy": ["New car is new and an old car is older than a year, Pfff.", "A new car is new and an old car is older than a year."],
+    "pushy": ["A new car is less than a year old and an old car is more than a year old.", "A new car is less than a year old and an old car is more than a year old."]
+  },
+  "meaning_car_type": {
+    "friendly": ["A car type is like a BMW or Audi.", "A car type is like a Volkswagen or Skoda."],
+    "happy": ["A car type is just like a nice Skoda or BMW. :)", "A car type is just like a nice Audi or Volkswagen. :)"],
+    "aggressive": ["Damn! It is just like a BMW, Audi,.......!!!!", "Serious! It is just like a Volkswagen, Audi,....!!!!"],
+    "rude": ["Are you serious? It is just like an Audi or BMW whatever.", "You serious? Car type is like a Volkswagen or other type."],
+    "lazy": ["Audi, Seat, BMW,....", "Volkswagen, Skoda, Audi,...."],
+    "pushy": ["A car type is like a Seat or Audi.", "A car type is like a Volkswagen or Opel."]
+  },
+  "meaning_year_car": {
+    "friendly": ["I mean by that when the car is built.", "This means when the car is built, not bought."],
+    "happy": ["We are meaning by that when the car is built. :)", "This means when the car is built, not bought. :)"],
+    "aggressive": ["This means when the fucking car is built!!", "It means when the fucking car is built!!"],
+    "rude": ["Are you kidding? This means when the car is built.", "Are you serious? This means when the car is built."],
+    "lazy": ["Year when the car is built.", "The year when the car is built."],
+    "pushy": ["I mean with this when the car is built.", "This means when the car is built, not bought."]
+  },
+  "meaning_type_fuel": {
+    "friendly": ["Such as gasoline, diesel, electric,...", "Like gasoline, diesel,..."],
+    "happy": ["Such as gasoline, diesel, electric,... :)", "Like gasoline, diesel,... :)"],
+    "aggressive": ["Damn what a stupid question!! Gasoline, Diesel,...!", "Are you stupid!!? It is just like Gasoline,..."],
+    "rude": ["Are you serious? It is just like gasoline, diesel,...", "Serious?? It is just like gasoline or whatever there is."],
+    "lazy": ["Gasoline, diesel, electric,....", "Gasoline, diesel, electric,..."],
+    "pushy": ["Such as gasoline, diesel, electric,...", "Like gasoline, diesel,..."]
+  },
+  "meaning_type_building": {
+    "friendly": ["Such as an apartment, a house, a mansion,...", "Like an apartment, a house,..."],
+    "happy": ["Such as apartment, a house, a mansion,... :)", "Like an apartment, a house,... :)"],
+    "aggressive": ["Damn what a stupid question!! Apartment, house,...!", "Are you stupid!!? It is just like an apartment,..."],
+    "rude": ["Are you serious? It is just like an apartment, a house,...", "Serious?? It is just like an apartment or whatever there is."],
+    "lazy": ["Apartment, house, mansion,....", "Apartment, house, mansion,..."],
+    "pushy": ["Such as an apartment, a house, a mansion,...", "Like an apartment, a house,..."]
+  },
+  "meaning_construction_year": {
+    "friendly": ["I mean by that when the building is built.", "This means when the building is built."],
+    "happy": ["We are meaning by that when the building is built. :)", "This means when the building is built. :)"],
+    "aggressive": ["This means when the fucking building is built!!", "It means when the fucking building is built!!"],
+    "rude": ["Are you kidding? This means when the building is built.", "Are you serious? This means when the building is built."],
+    "lazy": ["Year when the building is built.", "The year when the building is built."],
+    "pushy": ["I mean by that when the building is built.", "This means when the building is built, not bought."]
+  },
+  "meaning_construction_home": {
+    "friendly": ["Such as stone, wood, concrete,...", "Like wood, stone,..."],
+    "happy": ["Such as stone, wood, concrete,... :)", "Like wood, concrete,... :)"],
+    "aggressive": ["Damn what a stupid question!! Wood, stone,...!", "Are you stupid!!? It is just like stone,..."],
+    "rude": ["Are you serious? It is just like wood, stone,...", "Serious?? It is just like stone or whatever there is."],
+    "lazy": ["Wood, stone, concrete,....", "Stone, wood, concrete,..."],
+    "pushy": ["Such as wood, stone, concrete,...", "Like stone, concrete,..."]
+  },
+  "meaning_business_home": {
+    "friendly": ["I mean by that when you also use your home as a business.", "I mean by that when you also use your home as a business."],
+    "happy": ["I mean with this when you also use your home as a business. :)", "I mean with this when you also use your home as a business. :)"],
+    "aggressive": ["Omg! I mean by that if you also use your fucking home as a stupid business!!", "Serious! I mean by that if you also use your fucking home as a stupid business!!"],
+    "rude": ["Serious? I mean by that if you are using your home as a business.", "Are you kidding? I mean by that if you are using your home as a business."],
+    "lazy": ["I mean by that if you also use your home as a business.", "I mean by that if you also use your home as a business."],
+    "pushy": ["I mean by that when you also use your home as a business.", "I mean by that when you also use your home as a business."]
+  },
 
 
   "ask_person_name": {
