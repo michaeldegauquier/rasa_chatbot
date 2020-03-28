@@ -31,14 +31,13 @@ intents:
 - meaning_type_building
 entities:
 - person_name
-- year_car
 - car_type
 - type_fuel
 - new_car
 - business_home
-- construction_year
 - construction_home
 - type_building
+- year
 actions:
 - action_get_intent
 - action_get_car_data_person

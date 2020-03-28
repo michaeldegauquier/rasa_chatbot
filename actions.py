@@ -185,7 +185,7 @@ class ActionGetCarDataPerson(Action):
                     f"{data['ask_car_insurance_car_type'][character_trait][random_response]}")
 
         elif check_insurance("car_insurance", "year_car") == 0:
-            year_car = next(tracker.get_latest_entity_values('year_car'), None)
+            year_car = next(tracker.get_latest_entity_values('year'), None)
             if year_car is not None:
                 write_insurance("car_insurance", "year_car", year_car)
             else:
@@ -250,7 +250,7 @@ class ActionGetFireDataPerson(Action):
                     f"{data['ask_fire_insurance_type_building'][character_trait][random_response]}")
 
         elif check_insurance("fire_insurance", "construction_year") == 0:
-            construction_year = next(tracker.get_latest_entity_values('construction_year'), None)
+            construction_year = next(tracker.get_latest_entity_values('year'), None)
             if construction_year is not None:
                 write_insurance("fire_insurance", "construction_year", construction_year)
             else:

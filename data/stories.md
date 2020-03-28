@@ -50,7 +50,7 @@
 * car_insurance_car_type{"car_type":"BMW"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2020"}
+* car_insurance_year_car{"year":"2020"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"Benzine"}
@@ -73,7 +73,7 @@
 * car_insurance_car_type{"car_type":"BMW"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2020"}
+* car_insurance_year_car{"year":"2020"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"Benzine"}
@@ -100,7 +100,7 @@
 * car_insurance_car_type{"car_type":"Audi"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2019"}
+* car_insurance_year_car{"year":"2019"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"Benzine"}
@@ -131,7 +131,7 @@
 * car_insurance_car_type{"car_type":"Audi"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2019"}
+* car_insurance_year_car{"year":"2019"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"Benzine"}
@@ -156,7 +156,7 @@
 * car_insurance_car_type{"car_type":"Audi"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2019"}
+* car_insurance_year_car{"year":"2019"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"Benzine"}
@@ -177,7 +177,7 @@
 * car_insurance_car_type{"car_type":"Audi"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2019"}
+* car_insurance_year_car{"year":"2019"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"Benzine"}
@@ -198,7 +198,7 @@
 * car_insurance_car_type{"car_type":"Audi"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2019"}
+* car_insurance_year_car{"year":"2019"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"Benzine"}
@@ -219,7 +219,7 @@
 * car_insurance_car_type{"car_type":"Audi"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2019"}
+* car_insurance_year_car{"year":"2019"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"Benzine"}
@@ -242,7 +242,7 @@
 * car_insurance_car_type{"car_type":"Audi"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2015"}
+* car_insurance_year_car{"year":"2015"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"diesel"}
@@ -273,7 +273,7 @@
 * car_insurance_car_type{"car_type":"BMW"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2015"}
+* car_insurance_year_car{"year":"2015"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"diesel"}
@@ -302,7 +302,7 @@
 * car_insurance_car_type{"car_type":"Audi"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2012"}
+* car_insurance_year_car{"year":"2012"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"benzine"}
@@ -314,7 +314,7 @@
 * car_insurance_car_type{"car_type":"BMW"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2015"}
+* car_insurance_year_car{"year":"2015"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"benzine"}
@@ -341,7 +341,7 @@
 * car_insurance_car_type{"car_type":"bmw"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2018"}
+* car_insurance_year_car{"year":"2018"}
     - action_get_car_data_person
     - action_get_car_data_person
 * dont_know
@@ -379,7 +379,7 @@
 * dont_know
 	- action_get_intent
     - action_no_information
-* car_insurance_year_car{"year_car":"2018"}
+* car_insurance_year_car{"year":"2018"}
     - action_get_car_data_person
     - action_get_car_data_person
 * dont_know
@@ -412,7 +412,7 @@
 * car_insurance_car_type{"car_type":"bmw"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2018"}
+* car_insurance_year_car{"year":"2018"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"benzine"}
@@ -442,7 +442,7 @@
 * car_insurance_car_type{"car_type":"bmw"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2018"}
+* car_insurance_year_car{"year":"2018"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"benzine"}
@@ -472,7 +472,7 @@
 * dont_know
 	- action_get_intent
     - action_no_information
-* car_insurance_year_car{"year_car":"2018"}
+* car_insurance_year_car{"year":"2018"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"benzine"}
@@ -499,7 +499,7 @@
 * car_insurance_car_type{"car_type":"bmw"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2018"}
+* car_insurance_year_car{"year":"2018"}
     - action_get_car_data_person
     - action_get_car_data_person
 * dont_know
@@ -529,7 +529,7 @@
 * car_insurance_car_type{"car_type":"bmw"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2018"}
+* car_insurance_year_car{"year":"2018"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"benzine"}
@@ -561,7 +561,7 @@
 * car_insurance_car_type{"car_type":"BMW"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2018"}
+* car_insurance_year_car{"year":"2018"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"benzine"}
@@ -592,7 +592,7 @@
 * car_insurance_car_type{"car_type":"Audi A5"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2016"}
+* car_insurance_year_car{"year":"2016"}
     - action_get_car_data_person
     - action_get_car_data_person
 * dont_know
@@ -622,7 +622,7 @@
 * car_insurance_car_type{"car_type":"BMW"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2020"}
+* car_insurance_year_car{"year":"2020"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"diesel"}
@@ -649,7 +649,7 @@
 * car_insurance_car_type{"car_type":"Volkswagen"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2011"}
+* car_insurance_year_car{"year":"2011"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"diesel","new_car":"yes"}
@@ -676,7 +676,7 @@
 * car_insurance_car_type{"car_type":"Volkswagen"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2014"}
+* car_insurance_year_car{"year":"2014"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"benzine"}
@@ -702,7 +702,7 @@
 * fire_insurance_type_building{"type_building":"apartment"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* fire_insurance_construction_year{"construction_year":"1990"}
+* fire_insurance_construction_year{"year":"1990"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * fire_insurance_construction_home{"construction_home":"wood"}
@@ -725,7 +725,7 @@
 * fire_insurance_type_building{"type_building":"apartment"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* fire_insurance_construction_year{"construction_year":"2008"}
+* fire_insurance_construction_year{"year":"2008"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * fire_insurance_construction_home{"construction_home":"stone"}
@@ -748,7 +748,7 @@
 * fire_insurance_type_building{"type_building":"mansion"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* car_insurance_year_car{"construction_year":"1992"}
+* car_insurance_year_car{"year":"1992"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * fire_insurance_construction_home{"construction_home":"wood"}
@@ -777,7 +777,7 @@
 * fire_insurance_type_building{"type_building":"mansion"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* fire_insurance_construction_year{"construction_year":"1992"}
+* fire_insurance_construction_year{"year":"1992"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * fire_insurance_construction_home{"construction_home":"stone"}
@@ -809,7 +809,7 @@
 * fire_insurance_type_building{"type_building":"apartment"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* fire_insurance_construction_year{"construction_year":"2005"}
+* fire_insurance_construction_year{"year":"2005"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * dont_know
@@ -847,7 +847,7 @@
     - action_get_fire_data_person
 * dont_know
     - action_no_information
-* fire_insurance_construction_year{"construction_year":"2005"}
+* fire_insurance_construction_year{"year":"2005"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * dont_know
@@ -885,7 +885,7 @@
     - action_get_fire_data_person
 * dont_know
     - action_no_information
-* fire_insurance_construction_year{"construction_year":"2005"}
+* fire_insurance_construction_year{"year":"2005"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * dont_know
@@ -925,7 +925,7 @@
     - action_get_fire_data_person
 * dont_know
     - action_no_information
-* fire_insurance_construction_year{"construction_year":"2005"}
+* fire_insurance_construction_year{"year":"2005"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * fire_insurance_construction_home{"construction_home":"stone"}
@@ -961,7 +961,7 @@
 * fire_insurance_type_building{"type_building":"apartment"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* fire_insurance_construction_year{"construction_year":"2005"}
+* fire_insurance_construction_year{"year":"2005"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * dont_know
@@ -999,7 +999,7 @@
 * fire_insurance_type_building{"type_building":"apartment"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* fire_insurance_construction_year{"construction_year":"2005"}
+* fire_insurance_construction_year{"year":"2005"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * fire_insurance_construction_home{"construction_home":"stone"}
@@ -1031,7 +1031,7 @@
 * fire_insurance_type_building{"type_building":"apartment"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* fire_insurance_construction_year{"construction_year":"2005"}
+* fire_insurance_construction_year{"year":"2005"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * fire_insurance_construction_home{"construction_home":"stone"}
@@ -1067,7 +1067,7 @@
 * fire_insurance_type_building{"type_building":"apartment"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* fire_insurance_construction_year{"construction_year":"2005"}
+* fire_insurance_construction_year{"year":"2005"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * fire_insurance_construction_home{"construction_home":"stone"}
@@ -1112,7 +1112,7 @@
     - action_get_car_data_person
 * meaning_year_car
     - action_get_intent
-* car_insurance_year_car{"year_car":"2019"}
+* car_insurance_year_car{"year":"2019"}
     - action_get_car_data_person
     - action_get_car_data_person
 * meaning_type_fuel
@@ -1153,7 +1153,7 @@
     - action_get_car_data_person
 * meaning_year_car
     - action_get_intent
-* car_insurance_year_car{"year_car":"2019"}
+* car_insurance_year_car{"year":"2019"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"benzine"}
@@ -1190,7 +1190,7 @@
 * car_insurance_car_type{"car_type":"Audi"}
     - action_get_car_data_person
     - action_get_car_data_person
-* car_insurance_year_car{"year_car":"2019"}
+* car_insurance_year_car{"year":"2019"}
     - action_get_car_data_person
     - action_get_car_data_person
 * meaning_type_fuel
@@ -1229,7 +1229,7 @@
     - action_get_car_data_person
 * meaning_year_car
     - action_get_intent
-* car_insurance_year_car{"year_car":"2019"}
+* car_insurance_year_car{"year":"2019"}
     - action_get_car_data_person
     - action_get_car_data_person
 * meaning_type_fuel
@@ -1268,7 +1268,7 @@
     - action_get_car_data_person
 * meaning_year_car
     - action_get_intent
-* car_insurance_year_car{"year_car":"2019"}
+* car_insurance_year_car{"year":"2019"}
     - action_get_car_data_person
     - action_get_car_data_person
 * meaning_type_fuel
@@ -1303,7 +1303,7 @@
     - action_get_car_data_person
 * meaning_year_car
     - action_get_intent
-* car_insurance_year_car{"year_car":"2015"}
+* car_insurance_year_car{"year":"2015"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"gasoline"}
@@ -1337,7 +1337,7 @@
     - action_get_fire_data_person
 * meaning_construction_year
     - action_get_intent
-* fire_insurance_construction_year{"construction_year":"1990"}
+* fire_insurance_construction_year{"year":"1990"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * meaning_construction_home
@@ -1378,7 +1378,7 @@
     - action_get_fire_data_person
 * meaning_construction_year
     - action_get_intent
-* fire_insurance_construction_year{"construction_year":"1990"}
+* fire_insurance_construction_year{"year":"1990"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * meaning_construction_home
@@ -1417,7 +1417,7 @@
     - action_get_fire_data_person
 * meaning_construction_year
     - action_get_intent
-* fire_insurance_construction_year{"construction_year":"1990"}
+* fire_insurance_construction_year{"year":"1990"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * fire_insurance_construction_home{"construction_home":"wood"}
@@ -1454,7 +1454,7 @@
 * fire_insurance_type_building{"type_building":"apartment"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* fire_insurance_construction_year{"construction_year":"1990"}
+* fire_insurance_construction_year{"year":"1990"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * meaning_construction_home
@@ -1493,7 +1493,7 @@
     - action_get_fire_data_person
 * meaning_construction_year
     - action_get_intent
-* fire_insurance_construction_year{"construction_year":"1990"}
+* fire_insurance_construction_year{"year":"1990"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * meaning_construction_home
@@ -1528,7 +1528,7 @@
 * fire_insurance_type_building{"type_building":"mansion"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* fire_insurance_construction_year{"construction_year":"2003"}
+* fire_insurance_construction_year{"year":"2003"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * meaning_construction_home
@@ -1569,7 +1569,7 @@
 * dont_know
     - action_get_intent
     - action_no_information
-* car_insurance_year_car{"year_car":"2006"}
+* car_insurance_year_car{"year":"2006"}
     - action_get_car_data_person
     - action_get_car_data_person
 * car_insurance_type_fuel{"type_fuel":"gasoline"}
@@ -1583,7 +1583,7 @@
     - action_get_fire_data_person
 * meaning_construction_year
     - action_get_intent
-* fire_insurance_construction_year{"construction_year":"1998"}
+* fire_insurance_construction_year{"year":"1998"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * meaning_construction_home
@@ -1597,7 +1597,7 @@
 * fire_insurance_type_building{"type_building":"mansion"}
     - action_get_fire_data_person
     - action_get_fire_data_person
-* fire_insurance_construction_year{"construction_year":"1988"}
+* fire_insurance_construction_year{"year":"1988"}
     - action_get_fire_data_person
     - action_get_fire_data_person
 * fire_insurance_construction_home{"construction_home":"wood"}
@@ -1610,5 +1610,174 @@
     - action_get_intent
 * thank
     - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_car_insurance_30
+
+* greet
+    - action_get_intent
+* want_insurance
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Bruce"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* meaning_new_car
+    - action_get_intent
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Volkswagen"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year":"2019"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"diesel"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* price_car_insurance
+    - action_get_intent
+* thank
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_insurance_19
+
+* greet
+    - action_get_intent
+* want_insurance
+    - action_get_intent
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Gert"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* meaning_type_building
+    - action_get_intent
+* fire_insurance_type_building{"type_building":"mansion"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* car_insurance_year_car{"year":"1985"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_home{"construction_home":"wood"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_business_home{"business_home":"yes"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* deny{"business_home":"no"}
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_and_car_insurance_2
+
+* greet
+    - action_get_intent
+* want_insurance
+    - action_get_intent
+* ask_after_insurances
+    - action_get_intent
+* car_insurance
+    - action_get_intent
+    - action_get_car_data_person
+* person_name{"person_name":"Ken"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* meaning_new_car{"new_car":"old"}
+    - action_get_intent
+* car_insurance_new_car{"new_car":"old"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* meaning_car_type
+    - action_get_intent
+* dont_know
+    - action_get_intent
+    - action_no_information
+* car_insurance_car_type{"car_type":"Audi"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year":"2016"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* dont_know
+    - action_get_intent
+    - action_no_information
+* car_insurance_type_fuel{"type_fuel":"benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* fire_insurance
+    - action_get_intent
+    - action_get_fire_data_person
+* meaning_type_building
+    - action_get_intent
+* fire_insurance_type_building{"type_building":"house"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* dont_know
+    - action_get_intent
+    - action_no_information
+* fire_insurance_construction_year{"year":"1986"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_home{"construction_home":"concrete"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_business_home{"business_home":"yes"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* no_questions{"business_home":"no"}
+    - action_get_intent
+* goodbye
+    - action_get_intent
+
+## Get_fire_and_car_insurance_3
+
+* greet
+    - action_get_intent
+* want_insurance
+    - action_get_intent
+* fire_insurance{"type_building":"mansion"}
+    - action_get_intent
+    - action_get_fire_data_person
+* person_name{"person_name":"Michael"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* meaning_type_building
+    - action_get_intent
+* fire_insurance_type_building{"type_building":"mansion"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* car_insurance_year_car{"year":"2006"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_construction_home{"construction_home":"stone"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* fire_insurance_type_building{"business_home":"use","type_building":"house"}
+    - action_get_fire_data_person
+    - action_get_fire_data_person
+* car_insurance{"business_home":"yes"}
+    - action_get_intent
+    - action_get_car_data_person
+* car_insurance_new_car{"new_car":"new"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_car_type{"car_type":"Bugatti"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_year_car{"year":"2020"}
+    - action_get_car_data_person
+    - action_get_car_data_person
+* car_insurance_type_fuel{"type_fuel":"Benzine"}
+    - action_get_car_data_person
+    - action_get_car_data_person
 * goodbye
     - action_get_intent
