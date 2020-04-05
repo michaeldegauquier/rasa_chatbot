@@ -30,8 +30,8 @@ class ActionHelloWorld(Action):
         return []
 
 
-# reset of car insurance data without the name of the person (user)
-def overwrite_car_insurance():
+# reset of insurance data without the name of the person (user)
+def overwrite_insurance():
     with open('database/clean_person_data.json', 'r') as file:
         data = json.load(file)
 
@@ -45,8 +45,8 @@ def overwrite_car_insurance():
         json.dump(data, file, indent=4)
 
 
-# write car insurance data to the file
-def write_car_insurance(intent, entity_name, entity_value):
+# write insurance data to the file
+def write_insurance(intent, entity_name, entity_value):
     with open('database/person_data.json', 'r') as file:
         data = json.load(file)
         data[intent][entity_name] = entity_value
@@ -57,8 +57,8 @@ def write_car_insurance(intent, entity_name, entity_value):
         json.dump(data, file, indent=4)
 
 
-# checking the data of the car insurance that is not filled in
-def check_car_insurance(intent, entity_name):
+# checking the data of the insurance that is not filled in
+def check_insurance(intent, entity_name):
     with open('database/person_data.json', 'r') as file:
         data = json.load(file)
         if data[intent][entity_name] == "":
@@ -67,8 +67,8 @@ def check_car_insurance(intent, entity_name):
             return 1
 
 
-# full reset of the car insurance data
-def reset_car_insurance():
+# full reset of the insurance data
+def reset_insurance():
     with open('database/clean_person_data.json', 'r') as file:
         data = json.load(file)
 
@@ -114,7 +114,7 @@ def choice_character_trait(character_traits_dict, text):
     elif array_size > 1:
         sentiment = sentiment_analysis(text)
 
-        if 'aggressive' in character_traits_dict and (0 <= sentiment <= 0.017) or (0.019 <= sentiment <= 0.060):
+        if 'aggressive' in character_traits_dict and ((0 <= sentiment <= 0.017) or (0.019 <= sentiment <= 0.060)):
             print('aggressive')
             return 'aggressive'
         else:
@@ -161,50 +161,124 @@ class ActionGetCarDataPerson(Action):
             with open('responses/responses.json') as json_file:
                 data = json.load(json_file)
 
-        if check_car_insurance("person", "person_name") == 0:
+        if check_insurance("person", "person_name") == 0:
             person_name = next(tracker.get_latest_entity_values('person_name'), None)
             if person_name is not None:
-                write_car_insurance("person", "person_name", person_name)
+                write_insurance("person", "person_name", person_name)
             else:
                 dispatcher.utter_message(f"{data['ask_person_name'][character_trait][random_response]}")
 
-        elif check_car_insurance("car_insurance", "new_car") == 0:
+        elif check_insurance("car_insurance", "new_car") == 0:
             new_car = next(tracker.get_latest_entity_values('new_car'), None)
             if new_car is not None:
-                write_car_insurance("car_insurance", "new_car", new_car)
+                write_insurance("car_insurance", "new_car", new_car)
             else:
                 dispatcher.utter_message(
                     f"{data['ask_car_insurance_new_car'][character_trait][random_response]}")
 
-        elif check_car_insurance("car_insurance", "car_type") == 0:
+        elif check_insurance("car_insurance", "car_type") == 0:
             car_type = next(tracker.get_latest_entity_values('car_type'), None)
             if car_type is not None:
-                write_car_insurance("car_insurance", "car_type", car_type)
+                write_insurance("car_insurance", "car_type", car_type)
             else:
                 dispatcher.utter_message(
                     f"{data['ask_car_insurance_car_type'][character_trait][random_response]}")
 
-        elif check_car_insurance("car_insurance", "year_car") == 0:
-            year_car = next(tracker.get_latest_entity_values('year_car'), None)
+        elif check_insurance("car_insurance", "year_car") == 0:
+            year_car = next(tracker.get_latest_entity_values('year'), None)
             if year_car is not None:
-                write_car_insurance("car_insurance", "year_car", year_car)
+                write_insurance("car_insurance", "year_car", year_car)
             else:
                 dispatcher.utter_message(
                     f"{data['ask_car_insurance_year_car'][character_trait][random_response]}")
 
-        elif check_car_insurance("car_insurance", "type_fuel") == 0:
+        elif check_insurance("car_insurance", "type_fuel") == 0:
             type_fuel = next(tracker.get_latest_entity_values('type_fuel'), None)
             if type_fuel is not None:
-                write_car_insurance("car_insurance", "type_fuel", type_fuel)
+                write_insurance("car_insurance", "type_fuel", type_fuel)
             else:
                 dispatcher.utter_message(
                     f"{data['ask_car_insurance_type_fuel'][character_trait][random_response]}")
-        elif check_car_insurance("car_insurance", "closed") == 0:
-            write_car_insurance("car_insurance", "closed", "true")
+
+        elif check_insurance("car_insurance", "closed") == 0:
+            write_insurance("car_insurance", "closed", "true")
             dispatcher.utter_message(f"{data['another_questions'][character_trait][random_response]}")
 
-        elif check_car_insurance("car_insurance", "closed") == 1:
-            overwrite_car_insurance()
+        elif check_insurance("car_insurance", "closed") == 1:
+            overwrite_insurance()
+
+        return []
+
+
+class ActionGetFireDataPerson(Action):
+
+    def name(self):
+        return "action_get_fire_data_person"
+
+    def run(self, dispatcher, tracker, domain):
+        intent = tracker.latest_message['intent'].get('name')
+        user_text = tracker.latest_message['text']
+        print(user_text)
+
+        with open('database/character_traits') as some_file:
+            character_traits = some_file.read().split(",")
+
+        character_traits_dict = filter_list(character_traits)
+        print(character_traits_dict)
+        character_trait = choice_character_trait(character_traits_dict, user_text)
+
+        random_response = random.randint(0, 1)
+        print(random_response)
+
+        if intent is not None:
+            with open('responses/responses.json') as json_file:
+                data = json.load(json_file)
+
+        if check_insurance("person", "person_name") == 0:
+            person_name = next(tracker.get_latest_entity_values('person_name'), None)
+            if person_name is not None:
+                write_insurance("person", "person_name", person_name)
+            else:
+                dispatcher.utter_message(f"{data['ask_person_name'][character_trait][random_response]}")
+
+        elif check_insurance("fire_insurance", "type_building") == 0:
+            type_building = next(tracker.get_latest_entity_values('type_building'), None)
+            if type_building is not None:
+                write_insurance("fire_insurance", "type_building", type_building)
+            else:
+                dispatcher.utter_message(
+                    f"{data['ask_fire_insurance_type_building'][character_trait][random_response]}")
+
+        elif check_insurance("fire_insurance", "construction_year") == 0:
+            construction_year = next(tracker.get_latest_entity_values('year'), None)
+            if construction_year is not None:
+                write_insurance("fire_insurance", "construction_year", construction_year)
+            else:
+                dispatcher.utter_message(
+                    f"{data['ask_fire_insurance_construction_year'][character_trait][random_response]}")
+
+        elif check_insurance("fire_insurance", "construction_home") == 0:
+            construction_home = next(tracker.get_latest_entity_values('construction_home'), None)
+            if construction_home is not None:
+                write_insurance("fire_insurance", "construction_home", construction_home)
+            else:
+                dispatcher.utter_message(
+                    f"{data['ask_fire_insurance_construction_home'][character_trait][random_response]}")
+
+        elif check_insurance("fire_insurance", "business_home") == 0:
+            business_home = next(tracker.get_latest_entity_values('business_home'), None)
+            if business_home is not None:
+                write_insurance("fire_insurance", "business_home", business_home)
+            else:
+                dispatcher.utter_message(
+                    f"{data['ask_fire_insurance_business_home'][character_trait][random_response]}")
+
+        elif check_insurance("fire_insurance", "closed") == 0:
+            write_insurance("fire_insurance", "closed", "true")
+            dispatcher.utter_message(f"{data['another_questions'][character_trait][random_response]}")
+
+        elif check_insurance("fire_insurance", "closed") == 1:
+            overwrite_insurance()
 
         return []
 
@@ -238,7 +312,7 @@ class ActionGetIntent(Action):
                 data = json.load(json_file)
 
             if intent == "goodbye":
-                reset_car_insurance()
+                reset_insurance()
 
             dispatcher.utter_message("{}".format(data[intent][character_trait][random_response]))
         else:

@@ -3,6 +3,7 @@ intents:
 - goodbye
 - want_insurance
 - car_insurance
+- fire_insurance
 - ask_after_insurances
 - thank
 - deny
@@ -15,15 +16,32 @@ intents:
 - car_insurance_type_fuel
 - price_car_insurance
 - no_questions
+- fire_insurance_construction_home
+- fire_insurance_type_building
+- fire_insurance_business_home
+- fire_insurance_construction_year
+- price_fire_insurance
+- meaning_type_fuel
+- meaning_car_type
+- meaning_construction_year
+- meaning_business_home
+- meaning_year_car
+- meaning_new_car
+- meaning_construction_home
+- meaning_type_building
 entities:
 - person_name
-- year_car
 - car_type
 - type_fuel
 - new_car
+- business_home
+- construction_home
+- type_building
+- year
 actions:
 - action_get_intent
 - action_get_car_data_person
+- action_get_fire_data_person
 - action_another_question
 - action_wrong_answer
 - action_no_information
