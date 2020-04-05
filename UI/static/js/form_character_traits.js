@@ -7,7 +7,7 @@ $(function() {
         if (inputForm !== "") {
             $("span.loading").text("Loading...").show();
 
-            const Urlc = 'https://wcl0c5rsb4.execute-api.us-east-1.amazonaws.com/deployct/character-trait/1';
+            /*const Urlc = 'https://wcl0c5rsb4.execute-api.us-east-1.amazonaws.com/deployct/character-trait/1';
             let dataObject = {"Id": 1, "character_traits": [inputForm]};
 
             // Put the new character traits in the database on AWS
@@ -25,13 +25,19 @@ $(function() {
                 error: function (error) {
                     console.log(error);
                 }
-            });
+            });*/
 
             // Reset the data from the chatbot about the car insurance
-            const Url = 'http://localhost:8080/reset_bot';
+            const Url = 'http://localhost:8080/test';
+
             $.ajax({
-                type: "GET",
+                type: 'POST',
                 url: Url,
+                data: JSON.stringify(inputForm),
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                dataType: 'json',
                 success: function (result) {
                     console.log(result);
                     location.reload(true);

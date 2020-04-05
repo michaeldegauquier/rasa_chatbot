@@ -1,12 +1,15 @@
 # main.py
 from flask import Flask
-from flask import url_for, jsonify, render_template, Response
+from flask_cors import CORS
+from flask import url_for, jsonify, render_template, Response, request
+from NER_inputfield import ner_function
 import json
 import os
 import requests
 import sys
 
 app = Flask(__name__)
+CORS(app)
 
 # this api is for running python functions via JavaScript
 @app.route('/reset_bot')
@@ -47,10 +50,40 @@ def index():
     return response
 
 
-@app.route('/test', methods=['GET'])
+@app.route('/test', methods=['POST'])
 def character_traits():
-    response = jsonify({"message": "test"})
-    response.headers.add('Access-Control-Allow-Origin', '*')
+    try:
+        req_data = request.get_json()
+
+        print(req_data)
+
+        data = ner_function.get_json_data_from_input(req_data)
+
+        character_traits_list = data['character_traits']
+
+        with open('./database/character_traits', 'w') as file:
+            file.write("")
+
+        with open('./database/character_traits', 'a') as file:
+            for c in character_traits_list:
+                if len(character_traits_list) == 1:
+                    file.write(c)
+                else:
+                    file.write(c + ",")
+
+        with open('./database/clean_person_data.json', 'r') as file:
+            data = json.load(file)
+
+        os.remove('./database/person_data.json')
+
+        with open('./database/person_data.json', 'w') as file:
+            json.dump(data, file, indent=4)
+
+        response = jsonify({"message": "Chatbot has been reset!"})
+        response.headers.add('Access-Control-Allow-Origin', '*')
+    except:
+        response = jsonify({"message": "Reset chatbot failed"})
+        response.headers.add('Access-Control-Allow-Origin', '*')
 
     return response
 
