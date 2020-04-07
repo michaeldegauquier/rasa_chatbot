@@ -11,6 +11,7 @@ import sys
 app = Flask(__name__)
 CORS(app)
 
+
 # this api is for running python functions via JavaScript
 @app.route('/reset_bot')
 def index():
@@ -57,7 +58,15 @@ def character_traits():
 
         print(req_data)
 
+        url = 'https://wcl0c5rsb4.execute-api.us-east-1.amazonaws.com/deployct/character-trait/1'
+        headers = {'Content-Type': 'application/json'}
+
         data = ner_function.get_json_data_from_input(req_data)
+
+        response = requests.put(url, data=json.dumps(data), headers=headers)
+        res = response.json()
+
+        print(res)
 
         character_traits_list = data['character_traits']
 
@@ -93,4 +102,8 @@ if __name__ == "__main__":
 
 # Reddit. Execute a python script on button click? Geraadpleegd via
 # https://www.reddit.com/r/learnpython/comments/9xyozb/execute_a_python_script_on_button_click/
+# Geraadpleegd op 14 maart 2020
+
+# Docs Flask-Cors. Flask-Cors. Geraadpleegd via
+# https://flask-cors.readthedocs.io/en/latest/
 # Geraadpleegd op 14 maart 2020

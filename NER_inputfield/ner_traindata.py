@@ -90,5 +90,17 @@ def get_train_data():
         ("I want a person who isn't happy, not aggressive, but rude",
          {"entities": [(22, 31, "ct"), (33, 47, "ct"), (53, 57, "ct")]}),
 
-        ]
+    ]
     return TRAIN_DATA
+
+# K. Jaiswal. Custom Named Entity Recognition Using Spacy. Geraadpleegd via
+# https://towardsdatascience.com/custom-named-entity-recognition-using-spacy-7140ebbb3718
+# Geraadpleegd op 4 april 2020
+
+# M. Murugavel. How to Train NER with Custom training data using spaCy. Geraadpleegd via
+# https://medium.com/@manivannan_data/how-to-train-ner-with-custom-training-data-using-spacy-188e0e508c6
+# Geraadpleegd op 4 april 2020
+
+# M. Murugavel. Train Spacy ner with custom dataset. Geraadpleegd via
+# https://github.com/ManivannanMurugavel/spacy-ner-annotator
+# Geraadpleegd op 4 april 2020
