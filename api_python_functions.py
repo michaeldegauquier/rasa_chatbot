@@ -65,7 +65,6 @@ def character_traits():
 
         response = requests.put(url, data=json.dumps(data), headers=headers)
         res = response.json()
-
         print(res)
 
         character_traits_list = data['character_traits']

@@ -36,19 +36,126 @@ def train_spacy(data, iterations):
     return nlp
 
 
-def get_character_traits(all_entities):
+def filter_list(doc, entity_name):
+    entities = []
+
+    for ent in doc.ents:
+        if ent.label_ == entity_name:
+            entities.append(ent.text)
+
+    return entities
+
+
+def get_character_traits(entities):
     character_traits_chatbot = {"friendly", "happy", "aggressive", "rude", "lazy", "pushy"}
     character_traits = []
 
-    for entity in all_entities:
+    for entity in entities:
         for ct in character_traits_chatbot:
-            if entity == ct and entity not in character_traits:
+            if entity.lower() == ct and entity.lower() not in character_traits:
                 character_traits.append(ct)
 
     if len(character_traits) == 0:
         character_traits.append("friendly")
 
-    json_data = {"Id": 1, "character_traits": character_traits}
+    return character_traits
+
+
+def get_age(entities):
+    possible_ages = []
+    sum_ages = 0
+
+    for entity in entities:
+        if entity.isdigit():
+            if 120 >= int(entity) >= 18:
+                possible_ages.append(int(entity))
+
+    for age in possible_ages:
+        sum_ages += age
+
+    average = round(sum_ages / len(possible_ages))
+    return average
+
+
+def get_gender(entities):
+    gender_male_keywords = {"he", "male", "him", "his", "man", "men", "husband", "husbands"}
+    gender_female_keywords = {"she", "female", "her", "woman", "women", "wife", "wives"}
+    male_counter = 0
+    female_counter = 0
+
+    for entity in entities:
+        if entity.lower() in gender_male_keywords:
+            male_counter = male_counter + 1
+        elif entity.lower() in gender_female_keywords:
+            female_counter = female_counter + 1
+
+    if male_counter == female_counter:
+        num = random.randint(0, 1)
+        if num == 0:
+            return "male"
+        else:
+            return "female"
+    else:
+        if male_counter > female_counter:
+            return "male"
+        else:
+            return "female"
+
+
+def get_glasses(entities):
+    glasses_keywords = {"wears glasses", "wear glasses", "wearing glasses"}
+    no_glasses_keywords = {"wears no glasses", "wear no glasses", "wearing no glasses", "not wear glasses"}
+    glasses_counter = 0
+    no_glasses_counter = 0
+
+    for entity in entities:
+        if entity.lower() in glasses_keywords:
+            glasses_counter = glasses_counter + 1
+        elif entity.lower() in no_glasses_keywords:
+            no_glasses_counter = no_glasses_counter + 1
+
+    if glasses_counter == no_glasses_counter:
+        num = random.randint(0, 1)
+        if num == 0:
+            return True
+        else:
+            return False
+    else:
+        if glasses_counter > no_glasses_counter:
+            return True
+        else:
+            return False
+
+
+def get_ethnicity(entities):
+    ethnicity_keywords = ["caucasian", "african", "southern", "asian"]
+    ethnicity = ""
+
+    for entity in entities:
+        for ety in ethnicity_keywords:
+            if entity.lower() == ety:
+                ethnicity = entity.lower()
+
+    if ethnicity == "":
+        num = random.randint(0, len(ethnicity_keywords)-1)
+        return ethnicity_keywords[num]
+
+    return ethnicity
+
+
+def get_json(doc):
+    character_traits = get_character_traits(filter_list(doc, "ct"))
+    age = get_age(filter_list(doc, "age"))
+    gender = get_gender(filter_list(doc, "gender"))
+    glasses = get_glasses(filter_list(doc, "glasses"))
+    ethnicity = get_ethnicity(filter_list(doc, "ety"))
+
+    json_data = {"Id": 1,
+                 "character_traits": character_traits,
+                 "age": age,
+                 "gender": gender,
+                 "glasses": glasses,
+                 "ethnicity": ethnicity}
 
     print(json_data)
 
@@ -79,13 +186,10 @@ def get_json_data_from_input(text_input):
     test_text = text_input
     doc = prdnlp(test_text)
 
-    all_entities = []
-
     for ent in doc.ents:
-        all_entities.append(ent.text)
         print(ent.text, ent.start_char, ent.end_char, ent.label_)
 
-    return get_character_traits(all_entities)
+    return get_json(doc)
 
 # K. Jaiswal. Custom Named Entity Recognition Using Spacy. Geraadpleegd via
 # https://towardsdatascience.com/custom-named-entity-recognition-using-spacy-7140ebbb3718
