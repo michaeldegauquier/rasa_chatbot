@@ -47,7 +47,7 @@ def filter_list(doc, entity_name):
 
 
 def get_character_traits(entities):
-    character_traits_chatbot = {"friendly", "happy", "aggressive", "rude", "lazy", "pushy"}
+    character_traits_chatbot = ["friendly", "happy", "aggressive", "rude", "lazy", "pushy"]
     character_traits = []
 
     for entity in entities:
@@ -56,7 +56,8 @@ def get_character_traits(entities):
                 character_traits.append(ct)
 
     if len(character_traits) == 0:
-        character_traits.append("friendly")
+        num = random.randint(0, len(character_traits_chatbot) - 1)
+        character_traits.append(character_traits_chatbot[num])
 
     return character_traits
 
@@ -67,14 +68,18 @@ def get_age(entities):
 
     for entity in entities:
         if entity.isdigit():
-            if 120 >= int(entity) >= 18:
+            if 100 >= int(entity) >= 0:
                 possible_ages.append(int(entity))
 
-    for age in possible_ages:
-        sum_ages += age
+    if len(possible_ages) != 0:
+        for age in possible_ages:
+            sum_ages += age
 
-    average = round(sum_ages / len(possible_ages))
-    return average
+        average = round(sum_ages / len(possible_ages))
+        return average
+    else:
+        age = random.randint(18, 100)
+        return age
 
 
 def get_gender(entities):

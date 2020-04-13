@@ -173,6 +173,36 @@ def get_train_data():
                        (86, 99, "glasses"), (104, 107, "gender"), (111, 113, "age"), (125, 128, "gender"),
                        (137, 144, "ety")]}),
 
+        ("He is aggressive and rude. He is also 39 years old.",
+         {"entities": [(0, 2, "gender"), (6, 16, "ct"), (21, 25, "ct"), (27, 29, "gender"), (38, 40, "age")]}),
+
+        ("The person who I am talking to is somebody who is very happy and sometimes rude. He wears glasses and is caucasian.",
+         {"entities": [(55, 60, "ct"), (75, 79, "ct"), (81, 83, "gender"), (84, 97, "glasses"), (105, 114, "ety")]}),
+
+        ("He is an african who lives in belgium. He has children and is always a happy man.",
+         {"entities": [(0, 2, "gender"), (9, 16, "ety"), (30, 37, "ety"), (39, 41, "gender"), (71, 76, "ct"),
+                       (77, 80, "gender")]}),
+
+        ("He is somebody who is southern. He always eat food and is always pushy.",
+         {"entities": [(0, 2, "gender"), (22, 30, "ety"), (32, 34, "gender"), (65, 70, "ct")]}),
+
+        ("He is an asian who is always aggressive and rude to everybody. Sometimes he wears glasses and has a great family.",
+         {"entities": [(0, 2, "gender"), (9, 14, "ct"), (29, 39, "ct"), (44, 48, "ct"), (73, 75, "gender"),
+                       (76, 89, "glasses")]}),
+
+        ("He is a man who is a caucasian. He does not wear glasses and is always rude and pushy.",
+         {"entities": [(0, 2, "gender"), (8, 11, "gender"), (21, 30, "ety"), (32, 34, "gender"), (40, 56, "glasses"),
+                       (71, 75, "ct"), (80, 85, "ct")]}),
+
+        ("he is happy and friendly, he is 25 years old",
+         {"entities": [(0, 2, "gender"), (6, 11, "ct"), (16, 24, "ct"), (26, 28, "gender"), (32, 34, "age")]}),
+
+        ("he is happy and friendly, he is 25 years old and is sometimes aggressive and he is an asian",
+         {"entities": [(0, 2, "gender"), (6, 11, "ct"), (16, 24, "ct"), (26, 28, "gender"), (32, 34, "age"),
+                       (62, 72, "ct"), (77, 79, "gender"), (86, 91, "ety")]}),
+
+        ("he is happy and rude, he is 25 years old",
+         {"entities": [(0, 2, "gender"), (6, 11, "ct"), (16, 20, "ct"), (22, 24, "gender"), (28, 30, "age")]}),
     ]
     return TRAIN_DATA
 
