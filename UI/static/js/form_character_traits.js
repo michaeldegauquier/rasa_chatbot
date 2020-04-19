@@ -3,9 +3,10 @@ $(function() {
 
     $("form").submit(async function(event) {
         let a = false;
-        let inputForm = $("input:first").val();
+        let inputForm = $("textarea:first").val();
+        console.log(inputForm);
         if (inputForm !== "") {
-            $("span.loading").text("Loading...").show();
+            $("span.loading").text("Searching for person, please wait...").show();
 
             /*const Urlc = 'https://wcl0c5rsb4.execute-api.us-east-1.amazonaws.com/deployct/character-trait/1';
             let dataObject = {"Id": 1, "character_traits": [inputForm]};
@@ -40,9 +41,11 @@ $(function() {
                 dataType: 'json',
                 success: function (result) {
                     console.log(result);
-                    location.reload(true);
+                    $("span.loading").text("Searching for person, please wait...").fadeOut();
+                    //location.reload(true);
                 },
                 error: function (error) {
+                    $("span.loading").text("Searching for person, please wait...").fadeOut();
                     console.log(error);
                 }
             });

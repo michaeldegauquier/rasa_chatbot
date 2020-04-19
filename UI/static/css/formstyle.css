@@ -1,5 +1,5 @@
 .chatbotinterface {
-    margin-top: -12%;
+    margin-top: -15%;
 }
 
 .center {
@@ -12,9 +12,9 @@
 }
 
 .normalButton {
-    background: #6072e6;
+    background: #6072e6 !important;
     border: none;
-    color: white;
+    color: white !important;
     padding: 13px;
     text-align: center;
     text-decoration: none;
@@ -27,7 +27,7 @@
 }
 
 .normalButton:hover {
-    background: #5160c2;
+    background: #5160c2 !important;
 }
 
 .hrStyle {
@@ -42,4 +42,11 @@
 .error {
     color: red;
     display: inline;
+}
+
+textarea {
+    width: 100% !important;
+    height: 100px !important;
+    resize: none !important;
+    border-radius: 10px;
 }

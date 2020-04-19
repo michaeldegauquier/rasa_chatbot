@@ -9,8 +9,23 @@ def get_train_data():
         ("I want a person who is very aggressive and happy sometimes",
          {"entities": [(28, 38, "ct"), (43, 48, "ct")]}),
 
+        ("I want a person who is very angry and glad sometimes",
+         {"entities": [(28, 33, "ct"), (38, 42, "ct")]}),
+
+        ("I want a person who is very mad and joyous sometimes",
+         {"entities": [(28, 31, "ct"), (36, 42, "ct")]}),
+
+        ("I want a person who is very evil and glad sometimes",
+         {"entities": [(28, 32, "ct"), (37, 41, "ct")]}),
+
         ("I want a person who is very happy and friendly sometimes",
          {"entities": [(28, 33, "ct"), (38, 46, "ct")]}),
+
+        ("I want a person who is very happy and kind sometimes",
+         {"entities": [(28, 33, "ct"), (38, 42, "ct")]}),
+
+        ("I want a person who is very joyous and kindly sometimes",
+         {"entities": [(28, 34, "ct"), (39, 45, "ct")]}),
 
         ("I want a person who is very aggressive, rude and happy sometimes",
          {"entities": [(28, 38, "ct"), (40, 44, "ct"), (49, 54, "ct")]}),
@@ -30,14 +45,44 @@ def get_train_data():
         ("I want a person who is pushy all the time.",
          {"entities": [(23, 28, "ct")]}),
 
+        ("I want a person who is pushful all the time.",
+         {"entities": [(23, 30, "ct")]}),
+
+        ("I want a person who is obtrusive all the time.",
+         {"entities": [(23, 32, "ct")]}),
+
         ("I want a person who is lazy all the time.",
+         {"entities": [(23, 27, "ct")]}),
+
+        ("I want a person who is idle all the time.",
          {"entities": [(23, 27, "ct")]}),
 
         ("I want a person who is friendly, rude and lazy sometimes",
          {"entities": [(23, 31, "ct"), (33, 37, "ct"), (42, 46, "ct")]}),
 
+        ("I want a person who is friendly, rude and idle sometimes",
+         {"entities": [(23, 31, "ct"), (33, 37, "ct"), (42, 46, "ct")]}),
+
+        ("I want a person who is friendly, impolite and idle sometimes",
+         {"entities": [(23, 31, "ct"), (33, 41, "ct"), (46, 50, "ct")]}),
+
         ("I want a person who is lazy and rude sometimes",
          {"entities": [(23, 27, "ct"), (32, 36, "ct")]}),
+
+        ("I want a person who is idle and bold sometimes",
+         {"entities": [(23, 27, "ct"), (32, 36, "ct")]}),
+
+        ("I want a person who is lazy and discourteous sometimes",
+         {"entities": [(23, 27, "ct"), (32, 44, "ct")]}),
+
+        ("I want a person who is lazy and unmannerly sometimes",
+         {"entities": [(23, 27, "ct"), (32, 42, "ct")]}),
+
+        ("I want a person who is idle and uncivil sometimes",
+         {"entities": [(23, 27, "ct"), (32, 39, "ct")]}),
+
+        ("I want a person who is idle and brutal sometimes",
+         {"entities": [(23, 27, "ct"), (32, 38, "ct")]}),
 
         ("I want a person who is enormous lazy and sometimes happy",
          {"entities": [(32, 36, "ct"), (51, 56, "ct")]}),
@@ -187,7 +232,7 @@ def get_train_data():
          {"entities": [(0, 2, "gender"), (22, 30, "ety"), (32, 34, "gender"), (65, 70, "ct")]}),
 
         ("He is an asian who is always aggressive and rude to everybody. Sometimes he wears glasses and has a great family.",
-         {"entities": [(0, 2, "gender"), (9, 14, "ct"), (29, 39, "ct"), (44, 48, "ct"), (73, 75, "gender"),
+         {"entities": [(0, 2, "gender"), (9, 14, "ety"), (29, 39, "ct"), (44, 48, "ct"), (73, 75, "gender"),
                        (76, 89, "glasses")]}),
 
         ("He is a man who is a caucasian. He does not wear glasses and is always rude and pushy.",
@@ -203,6 +248,40 @@ def get_train_data():
 
         ("he is happy and rude, he is 25 years old",
          {"entities": [(0, 2, "gender"), (6, 11, "ct"), (16, 20, "ct"), (22, 24, "gender"), (28, 30, "age")]}),
+
+        ("He is 25 years old and has a dog. Sometimes he is very rude and happy to people. But most of the time he is friendly. He is an asian man",
+         {"entities": [(0, 2, "gender"), (6, 8, "age"), (44, 46, "gender"), (55, 59, "ct"), (64, 69, "ct"),
+                       (108, 116, "ct"), (118, 120, "gender"), (127, 132, "ety"), (133, 136, "gender")]}),
+
+        ("i want somebody who is aggressive. He is a woman who is slow in talking. She wears glasses and is 48 years old.",
+         {"entities": [(23, 33, "ct"), (35, 37, "gender"), (43, 48, "gender"), (73, 76, "gender"), (77, 90, "glasses"),
+                       (98, 100, "age")]}),
+
+        ("He is 28 years old, he also is a strange guy who is friendly and sometimes rude. He is an asian.",
+         {"entities": [(0, 2, "gender"), (6, 8, "age"), (52, 60, "ct"), (75, 79, "ct"), (81, 83, "gender"),
+                       (90, 95, "ety")]}),
+
+        ("She is a very friendly person to her friends. She is a caucasian and has a nice dog. She is 39 years old and does not wear glasses.",
+         {"entities": [(0, 3, "gender"), (14, 22, "ct"), (46, 49, "gender"), (55, 64, "ety"), (85, 88, "gender"),
+                       (92, 94, "age"), (114, 130, "glasses")]}),
+
+        ("She is a very kind and well known person. Sometimes she is idle and impolite.",
+         {"entities": [(0, 3, "gender"), (14, 18, "ct"), (52, 55, "gender"), (59, 63, "ct"), (68, 76, "ct")]}),
+
+        ("She is not bold to other people. She wears glasses and is 28 years old.",
+         {"entities": [(0, 3, "gender"), (7, 15, "ct"), (19, 24, "ct"), (33, 36, "gender"), (37, 50, "glasses"),
+                       (58, 60, "age")]}),
+
+        ("He is a person who is very rich. He isn't happy and is very unmannerly. He always wears glasses.",
+         {"entities": [(0, 2, "gender"), (33, 35, "gender"), (38, 47, "ct"), (60, 70, "ct"), (72, 74, "gender"),
+                       (82, 95, "glasses")]}),
+
+        ("I want a person who is not mad and not uncivil. He must be an obtrusive person and must be 25 years old.",
+         {"entities": [(23, 30, "ct"), (35, 46, "ct"), (48, 50, "gender"), (62, 71, "ct"), (91, 93, "age")]}),
+
+        ("I want somebody who is bold to everybody. He is not mad and not pushful.",
+         {"entities": [(23, 27, "ct"), (42, 44, "gender"), (48, 55, "ct"), (60, 71, "ct")]}),
+
     ]
     return TRAIN_DATA
 

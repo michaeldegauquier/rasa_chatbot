@@ -47,17 +47,28 @@ def filter_list(doc, entity_name):
 
 
 def get_character_traits(entities):
-    character_traits_chatbot = ["friendly", "happy", "aggressive", "rude", "lazy", "pushy"]
+    character_traits_chatbot = {"friendly": ["friendly", "kind", "kindly", "not rude", "n't rude", "not brutal", "n't brutal", "not impolite",
+                                             "n't impolite", "not bold", "n't bold", "not discourteous", "n't discourteous", "not unmannerly",
+                                             "n't unmannerly", "not uncivil", "n't uncivil"],
+                                "happy": ["happy", "glad", "joyous", "not aggressive", "n't aggressive", "not angry", "n't angry", "not mad",
+                                          "n't mad", "not evil", "n't evil"],
+                                "aggressive": ["aggressive", "angry", "mad", "evil", "not happy", "n't happy", "not glad", "n't glad",
+                                               "not joyous", "n't joyous"],
+                                "rude": ["rude", "brutal", "impolite", "bold", "discourteous", "unmannerly", "uncivil", "not friendly",
+                                         "n't friendly", "not kind", "n't kind", "not kindly", "n't kindly"],
+                                "lazy": ["lazy", "idle"],
+                                "pushy": ["pushy", "pushful", "obtrusive"]}
     character_traits = []
 
     for entity in entities:
-        for ct in character_traits_chatbot:
-            if entity.lower() == ct and entity.lower() not in character_traits:
-                character_traits.append(ct)
+        for ct, cts in character_traits_chatbot.items():
+            for c in cts:
+                if entity.lower() == c and ct.lower() not in character_traits:
+                    character_traits.append(ct)
 
     if len(character_traits) == 0:
         num = random.randint(0, len(character_traits_chatbot) - 1)
-        character_traits.append(character_traits_chatbot[num])
+        character_traits.append(list(character_traits_chatbot)[num])
 
     return character_traits
 
@@ -132,20 +143,27 @@ def get_glasses(entities):
             return False
 
 
+def ethnicity_picker(ethnicity_dict):
+    ety_list = []
+    largest_count = max(ethnicity_dict.values())
+
+    for ety, counter in ethnicity_dict.items():
+        if counter == largest_count:
+            ety_list.append(ety)
+
+    num = random.randint(0, len(ety_list) - 1)
+    return list(ety_list)[num]
+
+
 def get_ethnicity(entities):
-    ethnicity_keywords = ["caucasian", "african", "southern", "asian"]
-    ethnicity = ""
+    ethnicity_keywords = {"caucasian": 0, "african": 0, "southern": 0, "asian": 0}
 
     for entity in entities:
-        for ety in ethnicity_keywords:
-            if entity.lower() == ety:
-                ethnicity = entity.lower()
+        for ety, counter in ethnicity_keywords.items():
+            if entity.lower() == ety.lower():
+                ethnicity_keywords[ety] = counter + 1
 
-    if ethnicity == "":
-        num = random.randint(0, len(ethnicity_keywords)-1)
-        return ethnicity_keywords[num]
-
-    return ethnicity
+    return ethnicity_picker(ethnicity_keywords)
 
 
 def get_json(doc):
@@ -178,7 +196,7 @@ def get_json_data_from_input(text_input):
 
     if trainable:
         print("TRAINING")
-        prdnlp = train_spacy(TRAIN_DATA, 20)
+        prdnlp = train_spacy(TRAIN_DATA, 25)
 
         # Save our trained Model
         prdnlp.to_disk('NER_inputfield/ner_model')
