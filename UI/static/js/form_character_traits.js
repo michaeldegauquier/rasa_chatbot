@@ -1,7 +1,9 @@
 $(function() {
     console.log("ready!");
+    $('#profile_div').hide();
 
     $("form").submit(async function(event) {
+        deleteMessages();
         let a = false;
         let inputForm = $("textarea:first").val();
         console.log(inputForm);
@@ -42,7 +44,7 @@ $(function() {
                 success: function (result) {
                     console.log(result);
                     $("span.loading").text("Searching for person, please wait...").fadeOut();
-                    //location.reload(true);
+                    $('#profile_div').fadeIn();
                 },
                 error: function (error) {
                     $("span.loading").text("Searching for person, please wait...").fadeOut();
@@ -51,10 +53,17 @@ $(function() {
             });
         }
         else {
-            $("span.error").text("Not valid!").show().fadeOut(1000);
+            $("span.error").text("Description is required!").show().fadeOut(1000);
         }
         event.preventDefault();
     });
+
+    // Delete all messages
+    function deleteMessages() {
+        $("p.userMsg").fadeOut();
+        $("p.botMsg").fadeOut();
+        $("img.botAvatar").fadeOut();
+    }
 });
 
 
