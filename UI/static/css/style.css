@@ -242,10 +242,11 @@ video:focus {
 	margin: 0 auto;
 	position: relative;
 	padding: 5px;
-	width: 10%;
+	width: 20%;
 	bottom: 0;
 	right: 0;
 	cursor: pointer;
+	text-align: center;
 }
 
 .profileIcon {

@@ -1,13 +1,16 @@
 $(function() {
     console.log("ready!");
+    $('#profile_div').hide();
 
     $("form").submit(async function(event) {
+        deleteMessages();
         let a = false;
-        let inputForm = $("input:first").val();
+        let inputForm = $("textarea:first").val();
+        console.log(inputForm);
         if (inputForm !== "") {
-            $("span.loading").text("Loading...").show();
+            $("span.loading").text("Searching for person, please wait...").show();
 
-            const Urlc = 'https://wcl0c5rsb4.execute-api.us-east-1.amazonaws.com/deployct/character-trait/1';
+            /*const Urlc = 'https://wcl0c5rsb4.execute-api.us-east-1.amazonaws.com/deployct/character-trait/1';
             let dataObject = {"Id": 1, "character_traits": [inputForm]};
 
             // Put the new character traits in the database on AWS
@@ -25,27 +28,42 @@ $(function() {
                 error: function (error) {
                     console.log(error);
                 }
-            });
+            });*/
 
             // Reset the data from the chatbot about the car insurance
-            const Url = 'http://localhost:8080/reset_bot';
+            const Url = 'http://localhost:8080/test';
+
             $.ajax({
-                type: "GET",
+                type: 'POST',
                 url: Url,
+                data: JSON.stringify(inputForm),
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                dataType: 'json',
                 success: function (result) {
                     console.log(result);
-                    location.reload(true);
+                    $("span.loading").text("Searching for person, please wait...").fadeOut();
+                    $('#profile_div').fadeIn();
                 },
                 error: function (error) {
+                    $("span.loading").text("Searching for person, please wait...").fadeOut();
                     console.log(error);
                 }
             });
         }
         else {
-            $("span.error").text("Not valid!").show().fadeOut(1000);
+            $("span.error").text("Description is required!").show().fadeOut(1000);
         }
         event.preventDefault();
     });
+
+    // Delete all messages
+    function deleteMessages() {
+        $("p.userMsg").fadeOut();
+        $("p.botMsg").fadeOut();
+        $("img.botAvatar").fadeOut();
+    }
 });
 
 

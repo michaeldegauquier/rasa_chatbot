@@ -1,5 +1,17 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(white, cornflowerblue) !important;
+}
+
 .chatbotinterface {
-    margin-top: -12%;
+    height: 60%;
+    margin-top: -15%;
 }
 
 .center {
@@ -12,9 +24,9 @@
 }
 
 .normalButton {
-    background: #6072e6;
+    background: #6072e6 !important;
     border: none;
-    color: white;
+    color: white !important;
     padding: 13px;
     text-align: center;
     text-decoration: none;
@@ -27,7 +39,7 @@
 }
 
 .normalButton:hover {
-    background: #5160c2;
+    background: #5160c2 !important;
 }
 
 .hrStyle {
@@ -42,4 +54,51 @@
 .error {
     color: red;
     display: inline;
+}
+
+textarea {
+    width: 100% !important;
+    height: 100px !important;
+    resize: none !important;
+    border-radius: 10px;
+    border-color: dimgray;
+    color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.activeButton {
+  background-color: #6072e6;
+}
+
+label.active {
+  color: black;
+}
+
+.about_us {
+  margin: auto;
+  text-align: center;
+  width: 50%;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
    <head>
-      <title>ChatBot</title>
+      <title>Interface</title>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -16,15 +16,23 @@
    <body>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script type="text/javascript" src="static/js/form_character_traits.js"></script>
-      <h5 class="center">Demo App Chatbot</h5>
-      <div class="form">
-         <form>
-            <div class="form-group">
-               <label for="inputCharacter1">Character trait</label>
-               <input type="text" name="character_trait" class="form-control" id="inputCharacter1" placeholder="Character trait">
-            </div>
-            <button type="submit" class="normalButton inline">Send</button><span class="error"></span><span class="loading"></span>
-         </form>
+      <ul>
+        <li><a href="about_me.html">About us</a></li>
+        <li><a class="activeButton" href="index.html">Chatbot</a></li>
+      </ul>
+      <div>
+         <h5 class="center">Hi there visitor!</h5>
+         <div class="form">
+            <p>This chatbot sells insurances and you can choose who you talk to. Give here a description of the person you wish to talk to.</p>
+            <form>
+               <div class="form-group">
+                  <label for="desc_person">Describe here your person:</label>
+                  <textarea class="form-control" id="desc_person" placeholder="Description person..."></textarea>
+                  <span class="error"></span><span class="loading"></span>
+               </div>
+               <button type="submit" class="normalButton inline">Find Person</button>
+            </form>
+         </div>
       </div>
 
       <br/>
@@ -36,7 +44,7 @@
          <div class="widget chatbotinterface">
             <div class="chat_header">
                <!--Add the name of the bot here -->
-               <span style="color:white;margin-left: 5px;">ChatBot </span>
+               <span style="color:white;margin-left: 5px;">Get here your insurance! </span>
                <span style="color:white;margin-right: 5px;float:right;margin-top: 5px;" id="close">
                <i class="material-icons">close</i>
                </span>
@@ -52,8 +60,9 @@
          </div>
          <!--bot widget -->
          <div class="profile_div" id="profile_div">
+            <p>We found the person for you!</p>
             <!--img class="imgProfile" src="static/img/botAvatar.png"/-->
-            <button class="normalButton">Open</button>
+            <button class="normalButton">Talk here</button>
          </div>
       <!--JavaScript at end of body for optimized loading-->
       <script type="text/javascript" src="static/js/materialize.min.js"></script>
@@ -65,5 +74,9 @@
 <!--
 // GK Techy. Rasa Core Chatbot Custom UI. Geraadpleegd via
 // https://www.youtube.com/watch?v=Fyap_IP1i3Q
+// Geraadpleegd op 20 januari 2020.
+
+// GK Techy. Rasa Core Chatbot Custom UI. Geraadpleegd via
+// https://github.com/GKTechy/rasa_core_chatbot
 // Geraadpleegd op 20 januari 2020.
 -->

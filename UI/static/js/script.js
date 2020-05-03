@@ -8,6 +8,7 @@ $('.usrInput').on('keyup keypress', function (e) {
 			return false;
 		} else {
 			$(".usrInput").blur();
+			$(".usrInput").focus();
 			setUserResponse(text);
 			send(text);
 			e.preventDefault();
@@ -19,8 +20,6 @@ $('.usrInput').on('keyup keypress', function (e) {
 
 //------------------------------------- Set user response------------------------------------
 function setUserResponse(val) {
-
-
 	var UserResponse = '<p class="userMsg">' + val + ' </p><div class="clearfix"></div>';
 	$(UserResponse).appendTo('.chats').show('slow');
 	$(".usrInput").val('');
@@ -106,7 +105,7 @@ $('#profile_div').click(function () {
 });
 
 $('#close').click(function () {
-	$('.profile_div').toggle();
+	$('.profile_div').hide();
 	$('.widget').toggle();
 });
 
@@ -140,4 +139,8 @@ $(document).on("click", ".menu .menuChips", function () {
 
 // GK Techy. Rasa Core Chatbot Custom UI. Geraadpleegd via
 // https://www.youtube.com/watch?v=Fyap_IP1i3Q
+// Geraadpleegd op 20 januari 2020.
+
+// GK Techy. Rasa Core Chatbot Custom UI. Geraadpleegd via
+// https://github.com/GKTechy/rasa_core_chatbot
 // Geraadpleegd op 20 januari 2020.
