@@ -36,7 +36,7 @@ function scrollToBottomOfResults() {
 function send(message) {
 	console.log("User Message:", message)
 	$.ajax({
-		url: 'http://localhost:5005/webhooks/rest/webhook',
+		url: 'https://7f208b63.ngrok.io/webhooks/rest/webhook', //'http://localhost:5005/webhooks/rest/webhook',
 		type: 'POST',
 		contentType: 'application/json',
 		data: JSON.stringify({

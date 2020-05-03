@@ -131,11 +131,7 @@ def get_glasses(entities):
             no_glasses_counter = no_glasses_counter + 1
 
     if glasses_counter == no_glasses_counter:
-        num = random.randint(0, 1)
-        if num == 0:
-            return True
-        else:
-            return False
+        return False
     else:
         if glasses_counter > no_glasses_counter:
             return True

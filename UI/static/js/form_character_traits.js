@@ -31,7 +31,7 @@ $(function() {
             });*/
 
             // Reset the data from the chatbot about the car insurance
-            const Url = 'http://localhost:8080/test';
+            const Url = 'https://d84f23e9.ngrok.io/test'; //'http://localhost:8080/test';
 
             $.ajax({
                 type: 'POST',
