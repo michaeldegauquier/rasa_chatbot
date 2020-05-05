@@ -61,13 +61,13 @@ def character_traits():
         url = 'https://wcl0c5rsb4.execute-api.us-east-1.amazonaws.com/deployct/character-trait/1'
         headers = {'Content-Type': 'application/json'}
 
-        data = ner_function.get_json_data_from_input(req_data)
+        dataPerson = ner_function.get_json_data_from_input(req_data)
 
-        response = requests.put(url, data=json.dumps(data), headers=headers)
+        response = requests.put(url, data=json.dumps(dataPerson), headers=headers)
         res = response.json()
         print(res)
 
-        character_traits_list = data['character_traits']
+        character_traits_list = dataPerson['character_traits']
 
         with open('./database/character_traits', 'w') as file:
             file.write("")
@@ -87,7 +87,7 @@ def character_traits():
         with open('./database/person_data.json', 'w') as file:
             json.dump(data, file, indent=4)
 
-        response = jsonify({"message": "Chatbot has been reset!"})
+        response = jsonify(dataPerson)
         response.headers.add('Access-Control-Allow-Origin', '*')
     except:
         response = jsonify({"message": "Reset chatbot failed"})
