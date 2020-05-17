@@ -162,19 +162,48 @@ def get_ethnicity(entities):
     return ethnicity_picker(ethnicity_keywords)
 
 
+def get_random_name(gender, ethnicity):
+    female_names = {
+        "caucasian": ["Molly", "Claire", "Abigail", "Jenna", "Allison", "Hannah", "Kaitlin", "Katy", "Emily",
+                      "Katherine"],
+        "african": ["Nombeko", "Ekua", "Emem", "Anaya", "Ashanti", "Chike", "Mesi", "Nia", "Sauda", "Zalika"],
+        "southern": ["Caroline", "Charlotte", "Ruby", "Bea", "Daisy", "Isabelle", "Selena", "Rita", "Ella", "Violet"],
+        "asian": ["Kim", "Minji", "Jane", "Lily", "Alice", "Amy", "Jessica", "Sarah", "Rachel", "Cherry"]}
+
+    male_names = {"caucasian": ["Jake", "Cody", "Luke", "Logan", "Cole", "Lucas", "Bradley", "Jacob", "Dylan", "Colin"],
+                  "african": ["Akachi", "Berko", "Cayman", "Chibuzo", "Desta", "Dubaku", "Keyon", "Obasi", "Simba",
+                              "Talib"],
+                  "southern": ["Billy", "Abott", "Alden", "Mason", "Davis", "Nolan", "Redmond", "Victor", "Lester",
+                               "Emmet"],
+                  "asian": ["Lee", "Jason", "Daniel", "James", "David", "Jack", "Eric", "Tony", "Sam", "Chris"]}
+
+    if gender.lower() == "male":
+        for ety, names in male_names.items():
+            if ety == ethnicity:
+                rand_num = random.randint(0, len(names) - 1)
+                return names[rand_num]
+    else:
+        for ety, names in female_names.items():
+            if ety == ethnicity:
+                rand_num = random.randint(0, len(names) - 1)
+                return names[rand_num]
+
+
 def get_json(doc):
     character_traits = get_character_traits(filter_list(doc, "ct"))
     age = get_age(filter_list(doc, "age"))
     gender = get_gender(filter_list(doc, "gender"))
     glasses = get_glasses(filter_list(doc, "glasses"))
     ethnicity = get_ethnicity(filter_list(doc, "ety"))
+    name = get_random_name(gender, ethnicity)
 
     json_data = {"Id": 1,
                  "character_traits": character_traits,
                  "age": age,
                  "gender": gender,
                  "glasses": glasses,
-                 "ethnicity": ethnicity}
+                 "ethnicity": ethnicity,
+                 "name": name}
 
     print(json_data)
 

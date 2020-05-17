@@ -33,7 +33,9 @@ $(function() {
 
             // Reset the data from the chatbot about the car insurance
             const UrlChatbot = /*'https://d84f23e9.ngrok.io/test';*/ 'http://localhost:8080/test';
-            const UrlFaceGen = 'http://ad6d720a.ngrok.io';
+            const UrlFaceGen = 'http://5c6b24d0.ngrok.io';
+            let name = document.getElementById('showName');
+            let nameChatbox = document.getElementById('nameChatbox');
 
             $.ajax({
                 type: 'POST',
@@ -45,6 +47,8 @@ $(function() {
                 dataType: 'json',
                 success: function (result) {
                     console.log(result);
+                    name.innerHTML = 'You can talk now with ' + result.name + '.';
+                    nameChatbox.innerHTML = ' ' + result.name;
                     getImage(UrlFaceGen, result);
                 },
                 error: function (error) {
@@ -89,6 +93,7 @@ $(function() {
 
     setInterval(function(){
         $("#re").attr("src", "https://drive.google.com/uc?export=view&id=1XGwyvEIPvxvef9f2O9XMzVSuamME3mSm&t="+new Date().getTime());
+        $("#re1").attr("src", "https://drive.google.com/uc?export=view&id=1XGwyvEIPvxvef9f2O9XMzVSuamME3mSm&t="+new Date().getTime());
     },2000);
 
     // Delete all messages

@@ -36,7 +36,7 @@ function scrollToBottomOfResults() {
 function send(message) {
 	console.log("User Message:", message)
 	$.ajax({
-		url: 'https://7f208b63.ngrok.io/webhooks/rest/webhook', //'http://localhost:5005/webhooks/rest/webhook',
+		url: 'http://localhost:5005/webhooks/rest/webhook', //'https://7f208b63.ngrok.io/webhooks/rest/webhook', //
 		type: 'POST',
 		contentType: 'application/json',
 		data: JSON.stringify({
@@ -64,7 +64,7 @@ function setBotResponse(val) {
 			//if there is no response from Rasa
 			msg = 'I couldn\'t get that. Let\' try something else!';
 
-			var BotResponse = '<img class="botAvatar" src="./static/img/botAvatar.png"><p class="botMsg">' + msg + '</p><div class="clearfix"></div>';
+			var BotResponse = '<!--img class="botAvatar" src="./static/img/botAvatar.png"--><p class="botMsg">' + msg + '</p><div class="clearfix"></div>';
 			$(BotResponse).appendTo('.chats').hide().fadeIn(1000);
 
 		} else {
@@ -72,7 +72,7 @@ function setBotResponse(val) {
 			for (i = 0; i < val.length; i++) {
 				//check if there is text message
 				if (val[i].hasOwnProperty("text")) {
-					var BotResponse = '<img class="botAvatar" src="./static/img/botAvatar.png"><p class="botMsg">' + val[i].text + '</p><div class="clearfix"></div>';
+					var BotResponse = '<!--img class="botAvatar" src="./static/img/botAvatar.png"--><p class="botMsg">' + val[i].text + '</p><div class="clearfix"></div>';
 					$(BotResponse).appendTo('.chats').hide().fadeIn(1000);
 				}
 

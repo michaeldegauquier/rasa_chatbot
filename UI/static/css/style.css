@@ -86,6 +86,12 @@ div.chats::-webkit-scrollbar-thumb:hover {
 	border: 2px solid #6072e6;
 }
 
+.botAvatarHeader {
+	border-radius: 50%;
+	width: 1.5em;
+	height: 1.5em;
+}
+
 .botMsg {
 	float: left;
 	margin-top: 5px;
