@@ -11,29 +11,9 @@ $(function() {
             $("span.loading").text("Searching for person, please wait...").show();
             $('#profile_div').hide();
 
-            /*const Urlc = 'https://wcl0c5rsb4.execute-api.us-east-1.amazonaws.com/deployct/character-trait/1';
-            let dataObject = {"Id": 1, "character_traits": [inputForm]};
-
-            // Put the new character traits in the database on AWS
-            $.ajax({
-                url: Urlc,
-                type: 'PUT',
-                data: JSON.stringify(dataObject),
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                dataType: 'json',
-                success: function (result) {
-                    console.log(result);
-                },
-                error: function (error) {
-                    console.log(error);
-                }
-            });*/
-
             // Reset the data from the chatbot about the car insurance
-            const UrlChatbot = /*'https://d84f23e9.ngrok.io/test';*/ 'http://localhost:8080/test';
-            const UrlFaceGen = 'http://5c6b24d0.ngrok.io';
+            const UrlChatbot = /*'https://d84f23e9.ngrok.io/reset_bot';*/ 'http://localhost:8080/reset_bot';
+            const UrlFaceGen = 'http://b04726f77355.ngrok.io';
             let name = document.getElementById('showName');
             let nameChatbox = document.getElementById('nameChatbox');
 
