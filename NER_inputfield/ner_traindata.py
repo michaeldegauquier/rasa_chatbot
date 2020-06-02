@@ -282,6 +282,23 @@ def get_train_data():
         ("I want somebody who is bold to everybody. He is not mad and not pushful.",
          {"entities": [(23, 27, "ct"), (42, 44, "gender"), (48, 55, "ct"), (60, 71, "ct")]}),
 
+        ("I want a person who isn't uncivil and not joyous. He is 38 years old and has no glasses.",
+         {"entities": [(22, 33, "ct"), (38, 48, "ct"), (50, 52, "gender"), (56, 58, "age"), (77, 87, "glasses")]}),
+
+        ("He is somebody who is impolite and idle. Sometimes he is obtrusive. He is 56 years old and has a nice house.",
+         {"entities": [(0, 2, "gender"), (22, 30, "ct"), (35, 39, "ct"), (51, 53, "gender"), (57, 66, "ct"),
+                       (68, 70, "gender"), (74, 76, "age")]}),
+
+        ("She is an aggressive person who is always bold to people. She is 40 years old and she is caucasian.",
+         {"entities": [(0, 3, "gender"), (10, 20, "ct"), (42, 46, "ct"), (58, 61, "gender"), (65, 67, "age"),
+                       (82, 85, "gender"), (89, 98, "ety")]}),
+
+        ("She is southern and has glasses. Sometimes she is rude and not glad.",
+         {"entities": [(0, 3, "gender"), (7, 15, "ety"), (20, 31, "glasses"), (43, 46, "gender"), (50, 54, "ct"),
+                       (59, 67, "ct")]}),
+
+        ("She is a happy person. She is wears glasses all the time and is 25 years old.",
+         {"entities": [(0, 3, "gender"), (9, 14, "ct"), (23, 26, "gender"), (30, 43, "glasses"), (64, 66, "age")]}),
     ]
     return TRAIN_DATA
 

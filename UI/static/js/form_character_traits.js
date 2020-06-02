@@ -13,7 +13,7 @@ $(function() {
 
             // Reset the data from the chatbot about the car insurance
             const UrlChatbot = /*'https://d84f23e9.ngrok.io/reset_bot';*/ 'http://localhost:8080/reset_bot';
-            const UrlFaceGen = 'http://b04726f77355.ngrok.io';
+            const UrlFaceGen = 'http://d14cb154464e.ngrok.io';
             let name = document.getElementById('showName');
             let nameChatbox = document.getElementById('nameChatbox');
 

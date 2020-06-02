@@ -95,7 +95,7 @@ def get_age(entities):
 
 def get_gender(entities):
     gender_male_keywords = {"he", "male", "him", "his", "man", "men", "husband", "husbands"}
-    gender_female_keywords = {"she", "female", "her", "woman", "women", "wife", "wives"}
+    gender_female_keywords = {"she", "female", "her", "woman", "women", "wife", "wives", "girl"}
     male_counter = 0
     female_counter = 0
 
@@ -119,8 +119,8 @@ def get_gender(entities):
 
 
 def get_glasses(entities):
-    glasses_keywords = {"wears glasses", "wear glasses", "wearing glasses"}
-    no_glasses_keywords = {"wears no glasses", "wear no glasses", "wearing no glasses", "not wear glasses"}
+    glasses_keywords = {"wears glasses", "wear glasses", "wearing glasses", "has glasses"}
+    no_glasses_keywords = {"wears no glasses", "wear no glasses", "wearing no glasses", "not wear glasses", "no glasses"}
     glasses_counter = 0
     no_glasses_counter = 0
 
